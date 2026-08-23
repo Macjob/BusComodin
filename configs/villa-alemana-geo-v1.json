@@ -1,0 +1,21 @@
+{
+  "version": "villa-alemana-geo-v1",
+  "bbox": {
+    "west": -71.405,
+    "south": -33.055,
+    "east": -71.345,
+    "north": -33.032
+  },
+  "anchors": [
+    {"id": "las-americas", "name": "Las Américas", "lat": -33.0439, "lon": -71.3947},
+    {"id": "la-concepcion", "name": "La Concepción", "lat": -33.0417, "lon": -71.3820},
+    {"id": "villa-alemana", "name": "Villa Alemana", "lat": -33.04253, "lon": -71.37353},
+    {"id": "sargento-aldea", "name": "Sargento Aldea", "lat": -33.0421, "lon": -71.3660},
+    {"id": "penablanca", "name": "Peñablanca", "lat": -33.0402, "lon": -71.3530}
+  ],
+  "sumo": {
+    "vehicle_classes": "publicTransport",
+    "network_file": "villa-alemana.net.xml",
+    "osm_file": "villa-alemana.osm.xml"
+  }
+}
