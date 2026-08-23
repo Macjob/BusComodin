@@ -1,0 +1,13 @@
+{
+  "version": "m5-v1",
+  "seeds": [11, 23, 42, 57, 71, 89, 101, 137, 173, 211, 257, 307, 359, 401, 449, 503, 557, 601, 653, 701],
+  "policies": ["baseline", "queue-first", "dtpm-inspired", "wait-aware", "connectivity-aware"],
+  "reinforcement_buses": [1, 2, 3, 4, 5],
+  "sensitivity": {
+    "demand_multiplier": [0.75, 1.0, 1.25, 1.5],
+    "capacity_multiplier": [0.75, 1.0, 1.25],
+    "headway_multiplier": [0.75, 1.0, 1.25, 1.5],
+    "congestion_multiplier": [1.0, 1.25, 1.5],
+    "partial_line_failure": ["none", "L1", "L2", "L3"]
+  }
+}
