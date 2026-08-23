@@ -5,14 +5,16 @@ import json
 
 from .output import write_results
 from .scenario import load_scenario
-from .simulation import run_baseline, run_dtpm_inspired, run_queue_first
+from .simulation import run_baseline, run_dtpm_inspired, run_queue_first, run_wait_aware
 
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="buscomodin")
     subparsers = parser.add_subparsers(dest="command", required=True)
     simulate = subparsers.add_parser("simulate", help="Run a simulation policy")
-    simulate.add_argument("policy", choices=["baseline", "queue-first", "dtpm-inspired"])
+    simulate.add_argument(
+        "policy", choices=["baseline", "queue-first", "dtpm-inspired", "wait-aware"]
+    )
     simulate.add_argument("--seed", type=int, default=42)
     simulate.add_argument("--scenario", default=None, help="Path to a versioned scenario JSON")
     simulate.add_argument("--output-dir", default="outputs")
@@ -27,6 +29,7 @@ def main(argv: list[str] | None = None) -> int:
             "baseline": run_baseline,
             "queue-first": run_queue_first,
             "dtpm-inspired": run_dtpm_inspired,
+            "wait-aware": run_wait_aware,
         }
         result = runners[args.policy](scenario, args.seed)
         json_path, csv_path = write_results(result, args.output_dir)

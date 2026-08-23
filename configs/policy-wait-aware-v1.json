@@ -1,0 +1,8 @@
+{
+  "version": "wait-aware-v1",
+  "weights": {
+    "wait_burden": 1.0,
+    "capacity_risk": 8.0
+  },
+  "minimum_queue": 1
+}
