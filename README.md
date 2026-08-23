@@ -66,9 +66,18 @@ La primera prueba real se mantendrá intencionalmente a escala comunal. Los prob
 
 ## Estado
 
-✅ M0: baseline sintético reproducible completado. El siguiente milestone (M1) no forma parte de este PR.
+M0–M6 están implementados y M7 mantiene un benchmark histórico/provisional UN11-2025 para Quilpué/Villa Alemana con trazados y frecuencias oficiales, paradas secundarias OSM, calibración histórica provisional y experimentos multi-seed/resiliencia. La operación vigente 2026 debe reconstruirse por separado.
 
-## Ejecutar M0 localmente
+### Revisar resultados M7
+
+Hay dos notebooks complementarios:
+
+- `notebooks/02_m7_review.py`: reproducción compacta de los experimentos.
+- `notebooks/03_m7_analysis.py`: dashboard exploratorio con KPIs y gráficos de espera, mejora vs baseline, resiliencia, espera censurada y tasa de servicio.
+
+Ambos usan celdas `# %%`, por lo que pueden abrirse como notebooks interactivos en VS Code/Jupyter. El dashboard vuelve a ejecutar las 20 semillas antes de graficar para evitar resultados desactualizados.
+
+## Ejecutar localmente
 
 Requiere `uv`. El proyecto declara Python 3.11+ y `uv` puede provisionarlo si no está instalado globalmente.
 
@@ -84,7 +93,7 @@ En Linux/macOS, reemplaza `.venv/Scripts/python.exe` por `.venv/bin/python`.
 
 La CLI escribe resultados machine-readable en `outputs/` (JSON y CSV) y además imprime el resumen por stdout. La misma combinación de escenario versionado y semilla debe producir resultados equivalentes.
 
-El escenario inicial está definido en `configs/scenario-v1.json`; no se requieren SUMO, datos reales ni servicios externos para M0. Las decisiones del motor sintético están documentadas en `docs/decisions/0001-m0-synthetic-engine.md`.
+El escenario sintético inicial está definido en `configs/scenario-v1.json`. El escenario espacial de referencia de M7 está en `configs/scenario-villa-alemana-un11-2025-spatial-v1.json`.
 
 ## Licencia
 
