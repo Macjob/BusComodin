@@ -1,0 +1,2965 @@
+{
+  "C01_I": [
+    {
+      "along_route_m": 1625.0,
+      "distance_to_route_m": 4.3,
+      "id": "OSM_4211431553",
+      "lat": -33.0660485,
+      "lon": -71.3710542,
+      "name": "OSM 4211431553",
+      "osm_id": 4211431553
+    },
+    {
+      "along_route_m": 1710.6,
+      "distance_to_route_m": 7.1,
+      "id": "OSM_6853944876",
+      "lat": -33.065274,
+      "lon": -71.3711733,
+      "name": "OSM 6853944876",
+      "osm_id": 6853944876
+    },
+    {
+      "along_route_m": 1801.8,
+      "distance_to_route_m": 5.5,
+      "id": "OSM_6744932872",
+      "lat": -33.0644496,
+      "lon": -71.3710351,
+      "name": "OSM 6744932872",
+      "osm_id": 6744932872
+    },
+    {
+      "along_route_m": 2032.7,
+      "distance_to_route_m": 6.2,
+      "id": "OSM_4211431552",
+      "lat": -33.0623609,
+      "lon": -71.3710202,
+      "name": "OSM 4211431552",
+      "osm_id": 4211431552
+    },
+    {
+      "along_route_m": 2243.9,
+      "distance_to_route_m": 8.5,
+      "id": "OSM_8461143873",
+      "lat": -33.0607388,
+      "lon": -71.371945,
+      "name": "OSM 8461143873",
+      "osm_id": 8461143873
+    },
+    {
+      "along_route_m": 2440.6,
+      "distance_to_route_m": 65.7,
+      "id": "OSM_6744932865",
+      "lat": -33.0590659,
+      "lon": -71.3731172,
+      "name": "OSM 6744932865",
+      "osm_id": 6744932865
+    },
+    {
+      "along_route_m": 2544.0,
+      "distance_to_route_m": 8.2,
+      "id": "OSM_4211431548",
+      "lat": -33.05814,
+      "lon": -71.3723108,
+      "name": "OSM 4211431548",
+      "osm_id": 4211431548
+    },
+    {
+      "along_route_m": 2768.3,
+      "distance_to_route_m": 2.6,
+      "id": "OSM_4211431547",
+      "lat": -33.0562828,
+      "lon": -71.3733377,
+      "name": "OSM 4211431547",
+      "osm_id": 4211431547
+    },
+    {
+      "along_route_m": 2991.2,
+      "distance_to_route_m": 2.9,
+      "id": "OSM_4211431536",
+      "lat": -33.0543037,
+      "lon": -71.3737192,
+      "name": "OSM 4211431536",
+      "osm_id": 4211431536
+    },
+    {
+      "along_route_m": 3026.7,
+      "distance_to_route_m": 10.2,
+      "id": "OSM_8461143880",
+      "lat": -33.0540035,
+      "lon": -71.3739139,
+      "name": "OSM 8461143880",
+      "osm_id": 8461143880
+    },
+    {
+      "along_route_m": 3419.6,
+      "distance_to_route_m": 0.5,
+      "id": "OSM_4211431527",
+      "lat": -33.0504743,
+      "lon": -71.3744217,
+      "name": "OSM 4211431527",
+      "osm_id": 4211431527
+    },
+    {
+      "along_route_m": 3911.7,
+      "distance_to_route_m": 0.2,
+      "id": "OSM_4211431524",
+      "lat": -33.0464892,
+      "lon": -71.3737074,
+      "name": "OSM 4211431524",
+      "osm_id": 4211431524
+    },
+    {
+      "along_route_m": 4393.0,
+      "distance_to_route_m": 24.4,
+      "id": "OSM_5581599430",
+      "lat": -33.0462048,
+      "lon": -71.3684106,
+      "name": "OSM 5581599430",
+      "osm_id": 5581599430
+    },
+    {
+      "along_route_m": 4666.3,
+      "distance_to_route_m": 11.7,
+      "id": "OSM_4517435480",
+      "lat": -33.0441599,
+      "lon": -71.3692045,
+      "name": "Paradero 4 1/2",
+      "osm_id": 4517435480
+    },
+    {
+      "along_route_m": 4762.3,
+      "distance_to_route_m": 11.2,
+      "id": "OSM_4517435481",
+      "lat": -33.0441891,
+      "lon": -71.3702331,
+      "name": "OSM 4517435481",
+      "osm_id": 4517435481
+    },
+    {
+      "along_route_m": 4812.6,
+      "distance_to_route_m": 2.5,
+      "id": "OSM_6405410606",
+      "lat": -33.0440824,
+      "lon": -71.3707776,
+      "name": "OSM 6405410606",
+      "osm_id": 6405410606
+    },
+    {
+      "along_route_m": 4977.5,
+      "distance_to_route_m": 15.0,
+      "id": "OSM_4428307302",
+      "lat": -33.0442987,
+      "lon": -71.3725364,
+      "name": "OSM 4428307302",
+      "osm_id": 4428307302
+    },
+    {
+      "along_route_m": 5023.4,
+      "distance_to_route_m": 0.1,
+      "id": "OSM_8482939661",
+      "lat": -33.0441774,
+      "lon": -71.3730338,
+      "name": "OSM 8482939661",
+      "osm_id": 8482939661
+    },
+    {
+      "along_route_m": 5330.0,
+      "distance_to_route_m": 2.1,
+      "id": "OSM_8482939662",
+      "lat": -33.0442665,
+      "lon": -71.3763189,
+      "name": "OSM 8482939662",
+      "osm_id": 8482939662
+    },
+    {
+      "along_route_m": 5413.2,
+      "distance_to_route_m": 11.4,
+      "id": "OSM_5198614077",
+      "lat": -33.0444174,
+      "lon": -71.3772042,
+      "name": "OSM 5198614077",
+      "osm_id": 5198614077
+    },
+    {
+      "along_route_m": 5681.2,
+      "distance_to_route_m": 10.5,
+      "id": "OSM_1734709892",
+      "lat": -33.0444508,
+      "lon": -71.3800799,
+      "name": "Paradero 7",
+      "osm_id": 1734709892
+    },
+    {
+      "along_route_m": 5795.8,
+      "distance_to_route_m": 5.2,
+      "id": "OSM_1734687251",
+      "lat": -33.0443218,
+      "lon": -71.3813106,
+      "name": "Paradero 7",
+      "osm_id": 1734687251
+    },
+    {
+      "along_route_m": 5935.9,
+      "distance_to_route_m": 5.1,
+      "id": "OSM_9568800061",
+      "lat": -33.0443381,
+      "lon": -71.3828114,
+      "name": "Paradero 8",
+      "osm_id": 9568800061
+    },
+    {
+      "along_route_m": 6030.1,
+      "distance_to_route_m": 69.8,
+      "id": "OSM_6887402306",
+      "lat": -33.0450295,
+      "lon": -71.3837461,
+      "name": "OSM 6887402306",
+      "osm_id": 6887402306
+    },
+    {
+      "along_route_m": 6162.6,
+      "distance_to_route_m": 13.6,
+      "id": "OSM_4439805071",
+      "lat": -33.0446875,
+      "lon": -71.3852,
+      "name": "Paradero 9",
+      "osm_id": 4439805071
+    },
+    {
+      "along_route_m": 6217.1,
+      "distance_to_route_m": 4.3,
+      "id": "OSM_3890480844",
+      "lat": -33.044615,
+      "lon": -71.3858086,
+      "name": "Paradero 9",
+      "osm_id": 3890480844
+    },
+    {
+      "along_route_m": 6411.8,
+      "distance_to_route_m": 0.3,
+      "id": "OSM_5076097472",
+      "lat": -33.0449691,
+      "lon": -71.3878537,
+      "name": "Paradero 10",
+      "osm_id": 5076097472
+    },
+    {
+      "along_route_m": 6467.4,
+      "distance_to_route_m": 6.1,
+      "id": "OSM_4524950459",
+      "lat": -33.0453246,
+      "lon": -71.3880841,
+      "name": "OSM 4524950459",
+      "osm_id": 4524950459
+    },
+    {
+      "along_route_m": 7059.3,
+      "distance_to_route_m": 1.6,
+      "id": "OSM_7638913944",
+      "lat": -33.0484756,
+      "lon": -71.3905697,
+      "name": "OSM 7638913944",
+      "osm_id": 7638913944
+    },
+    {
+      "along_route_m": 7424.2,
+      "distance_to_route_m": 3.6,
+      "id": "OSM_8777497196",
+      "lat": -33.0517766,
+      "lon": -71.3904826,
+      "name": "OSM 8777497196",
+      "osm_id": 8777497196
+    },
+    {
+      "along_route_m": 7946.4,
+      "distance_to_route_m": 2.6,
+      "id": "OSM_7636866987",
+      "lat": -33.055265,
+      "lon": -71.3906327,
+      "name": "OSM 7636866987",
+      "osm_id": 7636866987
+    },
+    {
+      "along_route_m": 8090.5,
+      "distance_to_route_m": 90.5,
+      "id": "OSM_7688288003",
+      "lat": -33.0565779,
+      "lon": -71.3912013,
+      "name": "OSM 7688288003",
+      "osm_id": 7688288003
+    },
+    {
+      "along_route_m": 8223.9,
+      "distance_to_route_m": 26.0,
+      "id": "OSM_7607123854",
+      "lat": -33.0574883,
+      "lon": -71.3896188,
+      "name": "OSM 7607123854",
+      "osm_id": 7607123854
+    },
+    {
+      "along_route_m": 8546.3,
+      "distance_to_route_m": 0.6,
+      "id": "OSM_7607123841",
+      "lat": -33.0581021,
+      "lon": -71.39328,
+      "name": "OSM 7607123841",
+      "osm_id": 7607123841
+    },
+    {
+      "along_route_m": 8686.0,
+      "distance_to_route_m": 0.3,
+      "id": "OSM_7607123831",
+      "lat": -33.0583066,
+      "lon": -71.3947579,
+      "name": "OSM 7607123831",
+      "osm_id": 7607123831
+    },
+    {
+      "along_route_m": 8724.7,
+      "distance_to_route_m": 28.0,
+      "id": "OSM_7512397514",
+      "lat": -33.0584786,
+      "lon": -71.3953815,
+      "name": "OSM 7512397514",
+      "osm_id": 7512397514
+    },
+    {
+      "along_route_m": 9524.5,
+      "distance_to_route_m": 67.6,
+      "id": "OSM_3240052061",
+      "lat": -33.0631902,
+      "lon": -71.3936029,
+      "name": "Alcalde Miguel Gandulfo Nº 1160",
+      "osm_id": 3240052061
+    },
+    {
+      "along_route_m": 9983.8,
+      "distance_to_route_m": 5.3,
+      "id": "OSM_8165163944",
+      "lat": -33.0643254,
+      "lon": -71.3903189,
+      "name": "OSM 8165163944",
+      "osm_id": 8165163944
+    }
+  ],
+  "C01_R": [
+    {
+      "along_route_m": 258.8,
+      "distance_to_route_m": 5.3,
+      "id": "OSM_8165163944",
+      "lat": -33.0643254,
+      "lon": -71.3903189,
+      "name": "OSM 8165163944",
+      "osm_id": 8165163944
+    },
+    {
+      "along_route_m": 720.6,
+      "distance_to_route_m": 68.7,
+      "id": "OSM_3240052061",
+      "lat": -33.0631902,
+      "lon": -71.3936029,
+      "name": "Alcalde Miguel Gandulfo Nº 1160",
+      "osm_id": 3240052061
+    },
+    {
+      "along_route_m": 1519.7,
+      "distance_to_route_m": 22.0,
+      "id": "OSM_7512397514",
+      "lat": -33.0584786,
+      "lon": -71.3953815,
+      "name": "OSM 7512397514",
+      "osm_id": 7512397514
+    },
+    {
+      "along_route_m": 1559.2,
+      "distance_to_route_m": 5.6,
+      "id": "OSM_7607123831",
+      "lat": -33.0583066,
+      "lon": -71.3947579,
+      "name": "OSM 7607123831",
+      "osm_id": 7607123831
+    },
+    {
+      "along_route_m": 1699.0,
+      "distance_to_route_m": 4.2,
+      "id": "OSM_7607123841",
+      "lat": -33.0581021,
+      "lon": -71.39328,
+      "name": "OSM 7607123841",
+      "osm_id": 7607123841
+    },
+    {
+      "along_route_m": 2032.8,
+      "distance_to_route_m": 24.5,
+      "id": "OSM_7607123854",
+      "lat": -33.0574883,
+      "lon": -71.3896188,
+      "name": "OSM 7607123854",
+      "osm_id": 7607123854
+    },
+    {
+      "along_route_m": 2160.0,
+      "distance_to_route_m": 90.9,
+      "id": "OSM_7688288003",
+      "lat": -33.0565779,
+      "lon": -71.3912013,
+      "name": "OSM 7688288003",
+      "osm_id": 7688288003
+    },
+    {
+      "along_route_m": 2319.1,
+      "distance_to_route_m": 17.7,
+      "id": "OSM_7636866987",
+      "lat": -33.055265,
+      "lon": -71.3906327,
+      "name": "OSM 7636866987",
+      "osm_id": 7636866987
+    },
+    {
+      "along_route_m": 2738.6,
+      "distance_to_route_m": 4.4,
+      "id": "OSM_8777497196",
+      "lat": -33.0517766,
+      "lon": -71.3904826,
+      "name": "OSM 8777497196",
+      "osm_id": 8777497196
+    },
+    {
+      "along_route_m": 3103.6,
+      "distance_to_route_m": 4.6,
+      "id": "OSM_7638913944",
+      "lat": -33.0484756,
+      "lon": -71.3905697,
+      "name": "OSM 7638913944",
+      "osm_id": 7638913944
+    },
+    {
+      "along_route_m": 3694.6,
+      "distance_to_route_m": 7.4,
+      "id": "OSM_4524950459",
+      "lat": -33.0453246,
+      "lon": -71.3880841,
+      "name": "OSM 4524950459",
+      "osm_id": 4524950459
+    },
+    {
+      "along_route_m": 3743.0,
+      "distance_to_route_m": 5.5,
+      "id": "OSM_5076097472",
+      "lat": -33.0449691,
+      "lon": -71.3878537,
+      "name": "Paradero 10",
+      "osm_id": 5076097472
+    },
+    {
+      "along_route_m": 3937.7,
+      "distance_to_route_m": 8.7,
+      "id": "OSM_3890480844",
+      "lat": -33.044615,
+      "lon": -71.3858086,
+      "name": "Paradero 9",
+      "osm_id": 3890480844
+    },
+    {
+      "along_route_m": 3992.2,
+      "distance_to_route_m": 9.6,
+      "id": "OSM_4439805071",
+      "lat": -33.0446875,
+      "lon": -71.3852,
+      "name": "Paradero 9",
+      "osm_id": 4439805071
+    },
+    {
+      "along_route_m": 4131.1,
+      "distance_to_route_m": 66.3,
+      "id": "OSM_6887402306",
+      "lat": -33.0450295,
+      "lon": -71.3837461,
+      "name": "OSM 6887402306",
+      "osm_id": 6887402306
+    },
+    {
+      "along_route_m": 4236.6,
+      "distance_to_route_m": 7.3,
+      "id": "OSM_1734712276",
+      "lat": -33.0444724,
+      "lon": -71.3826156,
+      "name": "Paradero 8",
+      "osm_id": 1734712276
+    },
+    {
+      "along_route_m": 4358.5,
+      "distance_to_route_m": 7.5,
+      "id": "OSM_1734687251",
+      "lat": -33.0443218,
+      "lon": -71.3813106,
+      "name": "Paradero 7",
+      "osm_id": 1734687251
+    },
+    {
+      "along_route_m": 4472.9,
+      "distance_to_route_m": 8.3,
+      "id": "OSM_1734709892",
+      "lat": -33.0444508,
+      "lon": -71.3800799,
+      "name": "Paradero 7",
+      "osm_id": 1734709892
+    },
+    {
+      "along_route_m": 4741.6,
+      "distance_to_route_m": 9.0,
+      "id": "OSM_5198614077",
+      "lat": -33.0444174,
+      "lon": -71.3772042,
+      "name": "OSM 5198614077",
+      "osm_id": 5198614077
+    },
+    {
+      "along_route_m": 4824.6,
+      "distance_to_route_m": 6.6,
+      "id": "OSM_8482939662",
+      "lat": -33.0442665,
+      "lon": -71.3763189,
+      "name": "OSM 8482939662",
+      "osm_id": 8482939662
+    },
+    {
+      "along_route_m": 5011.7,
+      "distance_to_route_m": 102.7,
+      "id": "OSM_4428307303",
+      "lat": -33.044313,
+      "lon": -71.3732488,
+      "name": "OSM 4428307303",
+      "osm_id": 4428307303
+    },
+    {
+      "along_route_m": 5254.9,
+      "distance_to_route_m": 48.7,
+      "id": "OSM_4211431524",
+      "lat": -33.0464892,
+      "lon": -71.3737074,
+      "name": "OSM 4211431524",
+      "osm_id": 4211431524
+    },
+    {
+      "along_route_m": 5702.9,
+      "distance_to_route_m": 5.0,
+      "id": "OSM_4211431527",
+      "lat": -33.0504743,
+      "lon": -71.3744217,
+      "name": "OSM 4211431527",
+      "osm_id": 4211431527
+    },
+    {
+      "along_route_m": 6095.7,
+      "distance_to_route_m": 6.6,
+      "id": "OSM_8461143880",
+      "lat": -33.0540035,
+      "lon": -71.3739139,
+      "name": "OSM 8461143880",
+      "osm_id": 8461143880
+    },
+    {
+      "along_route_m": 6131.3,
+      "distance_to_route_m": 6.5,
+      "id": "OSM_4211431536",
+      "lat": -33.0543037,
+      "lon": -71.3737192,
+      "name": "OSM 4211431536",
+      "osm_id": 4211431536
+    },
+    {
+      "along_route_m": 6355.0,
+      "distance_to_route_m": 5.5,
+      "id": "OSM_4211431547",
+      "lat": -33.0562828,
+      "lon": -71.3733377,
+      "name": "OSM 4211431547",
+      "osm_id": 4211431547
+    },
+    {
+      "along_route_m": 6579.9,
+      "distance_to_route_m": 8.4,
+      "id": "OSM_4211431548",
+      "lat": -33.05814,
+      "lon": -71.3723108,
+      "name": "OSM 4211431548",
+      "osm_id": 4211431548
+    },
+    {
+      "along_route_m": 6684.8,
+      "distance_to_route_m": 64.3,
+      "id": "OSM_6744932865",
+      "lat": -33.0590659,
+      "lon": -71.3731172,
+      "name": "OSM 6744932865",
+      "osm_id": 6744932865
+    },
+    {
+      "along_route_m": 6880.6,
+      "distance_to_route_m": 5.2,
+      "id": "OSM_8461143873",
+      "lat": -33.0607388,
+      "lon": -71.371945,
+      "name": "OSM 8461143873",
+      "osm_id": 8461143873
+    },
+    {
+      "along_route_m": 7090.8,
+      "distance_to_route_m": 6.7,
+      "id": "OSM_4211431552",
+      "lat": -33.0623609,
+      "lon": -71.3710202,
+      "name": "OSM 4211431552",
+      "osm_id": 4211431552
+    },
+    {
+      "along_route_m": 7321.8,
+      "distance_to_route_m": 5.1,
+      "id": "OSM_6744932872",
+      "lat": -33.0644496,
+      "lon": -71.3710351,
+      "name": "OSM 6744932872",
+      "osm_id": 6744932872
+    },
+    {
+      "along_route_m": 7412.9,
+      "distance_to_route_m": 5.9,
+      "id": "OSM_6853944876",
+      "lat": -33.065274,
+      "lon": -71.3711733,
+      "name": "OSM 6853944876",
+      "osm_id": 6853944876
+    },
+    {
+      "along_route_m": 7498.5,
+      "distance_to_route_m": 5.2,
+      "id": "OSM_4211431553",
+      "lat": -33.0660485,
+      "lon": -71.3710542,
+      "name": "OSM 4211431553",
+      "osm_id": 4211431553
+    }
+  ],
+  "C02_I": [
+    {
+      "along_route_m": 51.2,
+      "distance_to_route_m": 2.6,
+      "id": "OSM_12051944441",
+      "lat": -33.0669689,
+      "lon": -71.3641781,
+      "name": "OSM 12051944441",
+      "osm_id": 12051944441
+    },
+    {
+      "along_route_m": 1932.8,
+      "distance_to_route_m": 2.9,
+      "id": "OSM_5885973508",
+      "lat": -33.0595505,
+      "lon": -71.3545558,
+      "name": "OSM 5885973508",
+      "osm_id": 5885973508
+    },
+    {
+      "along_route_m": 2029.4,
+      "distance_to_route_m": 5.1,
+      "id": "OSM_5885973509",
+      "lat": -33.0586892,
+      "lon": -71.3547435,
+      "name": "Avenida Vicepresidente Bernardo Leighton - Río Baker",
+      "osm_id": 5885973509
+    },
+    {
+      "along_route_m": 2235.5,
+      "distance_to_route_m": 3.9,
+      "id": "OSM_6376244090",
+      "lat": -33.0568605,
+      "lon": -71.3551558,
+      "name": "Avenida Vicepresidente Bernardo Leighton - Antumapu",
+      "osm_id": 6376244090
+    },
+    {
+      "along_route_m": 2813.5,
+      "distance_to_route_m": 4.7,
+      "id": "OSM_5887972423",
+      "lat": -33.0517074,
+      "lon": -71.3562213,
+      "name": "OSM 5887972423",
+      "osm_id": 5887972423
+    },
+    {
+      "along_route_m": 2883.7,
+      "distance_to_route_m": 15.7,
+      "id": "OSM_5885973522",
+      "lat": -33.0511954,
+      "lon": -71.3560546,
+      "name": "OSM 5885973522",
+      "osm_id": 5885973522
+    },
+    {
+      "along_route_m": 3078.9,
+      "distance_to_route_m": 5.5,
+      "id": "OSM_5888278138",
+      "lat": -33.0495896,
+      "lon": -71.3551779,
+      "name": "OSM 5888278138",
+      "osm_id": 5888278138
+    },
+    {
+      "along_route_m": 3539.2,
+      "distance_to_route_m": 6.0,
+      "id": "OSM_8482939659",
+      "lat": -33.0459408,
+      "lon": -71.3539071,
+      "name": "Paradero 2",
+      "osm_id": 8482939659
+    },
+    {
+      "along_route_m": 3645.9,
+      "distance_to_route_m": 8.9,
+      "id": "OSM_4428307305",
+      "lat": -33.0452901,
+      "lon": -71.3547671,
+      "name": "Paradero 2",
+      "osm_id": 4428307305
+    },
+    {
+      "along_route_m": 3833.8,
+      "distance_to_route_m": 1.9,
+      "id": "OSM_4364886855",
+      "lat": -33.0439282,
+      "lon": -71.3559772,
+      "name": "Paradero 3",
+      "osm_id": 4364886855
+    },
+    {
+      "along_route_m": 4267.4,
+      "distance_to_route_m": 6.4,
+      "id": "OSM_3890470669",
+      "lat": -33.0426151,
+      "lon": -71.3599444,
+      "name": "Paradero 3 1/2",
+      "osm_id": 3890470669
+    },
+    {
+      "along_route_m": 4730.5,
+      "distance_to_route_m": 0.4,
+      "id": "OSM_4400578361",
+      "lat": -33.0437503,
+      "lon": -71.3646169,
+      "name": "Paradero 4",
+      "osm_id": 4400578361
+    },
+    {
+      "along_route_m": 5111.4,
+      "distance_to_route_m": 0.4,
+      "id": "OSM_3902409408",
+      "lat": -33.0440031,
+      "lon": -71.3686838,
+      "name": "Paradero 4 1/2",
+      "osm_id": 3902409408
+    },
+    {
+      "along_route_m": 5160.5,
+      "distance_to_route_m": 15.0,
+      "id": "OSM_4517435480",
+      "lat": -33.0441599,
+      "lon": -71.3692045,
+      "name": "Paradero 4 1/2",
+      "osm_id": 4517435480
+    },
+    {
+      "along_route_m": 5232.6,
+      "distance_to_route_m": 28.1,
+      "id": "OSM_4517435481",
+      "lat": -33.0441891,
+      "lon": -71.3702331,
+      "name": "OSM 4517435481",
+      "osm_id": 4517435481
+    },
+    {
+      "along_route_m": 5644.5,
+      "distance_to_route_m": 5.3,
+      "id": "OSM_2427029384",
+      "lat": -33.0429387,
+      "lon": -71.3730731,
+      "name": "Terminal Villa Alemana",
+      "osm_id": 2427029384
+    },
+    {
+      "along_route_m": 5701.9,
+      "distance_to_route_m": 6.2,
+      "id": "OSM_9202938895",
+      "lat": -33.0429463,
+      "lon": -71.3736878,
+      "name": "OSM 9202938895",
+      "osm_id": 9202938895
+    },
+    {
+      "along_route_m": 5797.2,
+      "distance_to_route_m": 98.0,
+      "id": "OSM_10229645660",
+      "lat": -33.0421409,
+      "lon": -71.3747379,
+      "name": "OSM 10229645660",
+      "osm_id": 10229645660
+    },
+    {
+      "along_route_m": 6509.8,
+      "distance_to_route_m": 9.1,
+      "id": "OSM_7816266239",
+      "lat": -33.0391268,
+      "lon": -71.3775556,
+      "name": "OSM 7816266239",
+      "osm_id": 7816266239
+    },
+    {
+      "along_route_m": 6696.0,
+      "distance_to_route_m": 1.1,
+      "id": "OSM_9560909441",
+      "lat": -33.0388604,
+      "lon": -71.379529,
+      "name": "OSM 9560909441",
+      "osm_id": 9560909441
+    },
+    {
+      "along_route_m": 7486.9,
+      "distance_to_route_m": 6.7,
+      "id": "OSM_5735398253",
+      "lat": -33.041672,
+      "lon": -71.3851832,
+      "name": "OSM 5735398253",
+      "osm_id": 5735398253
+    },
+    {
+      "along_route_m": 9490.8,
+      "distance_to_route_m": 6.1,
+      "id": "OSM_13984394353",
+      "lat": -33.0381667,
+      "lon": -71.3946265,
+      "name": "OSM 13984394353",
+      "osm_id": 13984394353
+    },
+    {
+      "along_route_m": 9609.5,
+      "distance_to_route_m": 26.3,
+      "id": "OSM_7816266105",
+      "lat": -33.0394663,
+      "lon": -71.3946292,
+      "name": "OSM 7816266105",
+      "osm_id": 7816266105
+    },
+    {
+      "along_route_m": 9655.3,
+      "distance_to_route_m": 5.5,
+      "id": "OSM_7816266104",
+      "lat": -33.0392831,
+      "lon": -71.3952045,
+      "name": "OSM 7816266104",
+      "osm_id": 7816266104
+    },
+    {
+      "along_route_m": 9884.6,
+      "distance_to_route_m": 4.4,
+      "id": "OSM_7040895653",
+      "lat": -33.0390487,
+      "lon": -71.3976493,
+      "name": "OSM 7040895653",
+      "osm_id": 7040895653
+    },
+    {
+      "along_route_m": 10190.5,
+      "distance_to_route_m": 82.5,
+      "id": "OSM_1850832718",
+      "lat": -33.0379445,
+      "lon": -71.3987868,
+      "name": "OSM 1850832718",
+      "osm_id": 1850832718
+    },
+    {
+      "along_route_m": 10239.4,
+      "distance_to_route_m": 8.4,
+      "id": "OSM_7816266094",
+      "lat": -33.0379385,
+      "lon": -71.4001961,
+      "name": "OSM 7816266094",
+      "osm_id": 7816266094
+    },
+    {
+      "along_route_m": 10359.8,
+      "distance_to_route_m": 8.6,
+      "id": "OSM_7816266093",
+      "lat": -33.0379745,
+      "lon": -71.4014849,
+      "name": "OSM 7816266093",
+      "osm_id": 7816266093
+    },
+    {
+      "along_route_m": 10701.3,
+      "distance_to_route_m": 7.3,
+      "id": "OSM_10234578704",
+      "lat": -33.0380925,
+      "lon": -71.4051421,
+      "name": "OSM 10234578704",
+      "osm_id": 10234578704
+    },
+    {
+      "along_route_m": 12552.2,
+      "distance_to_route_m": 11.1,
+      "id": "OSM_5967791277",
+      "lat": -33.0466261,
+      "lon": -71.4067655,
+      "name": "Paradero 14",
+      "osm_id": 5967791277
+    },
+    {
+      "along_route_m": 12598.0,
+      "distance_to_route_m": 2.5,
+      "id": "OSM_4274825289",
+      "lat": -33.0465116,
+      "lon": -71.4072594,
+      "name": "Paradero 14",
+      "osm_id": 4274825289
+    },
+    {
+      "along_route_m": 12665.8,
+      "distance_to_route_m": 7.8,
+      "id": "OSM_4274825189",
+      "lat": -33.0466068,
+      "lon": -71.4079884,
+      "name": "Paradero 14 1/2",
+      "osm_id": 4274825189
+    },
+    {
+      "along_route_m": 12730.8,
+      "distance_to_route_m": 100.5,
+      "id": "OSM_4358039269",
+      "lat": -33.0474163,
+      "lon": -71.4087323,
+      "name": "OSM 4358039269",
+      "osm_id": 4358039269
+    },
+    {
+      "along_route_m": 12839.3,
+      "distance_to_route_m": 5.1,
+      "id": "OSM_4524950428",
+      "lat": -33.0463724,
+      "lon": -71.4098307,
+      "name": "Paradero 15",
+      "osm_id": 4524950428
+    },
+    {
+      "along_route_m": 13142.1,
+      "distance_to_route_m": 16.3,
+      "id": "OSM_5567963297",
+      "lat": -33.0460587,
+      "lon": -71.413068,
+      "name": "Paradero 16",
+      "osm_id": 5567963297
+    },
+    {
+      "along_route_m": 13202.9,
+      "distance_to_route_m": 4.2,
+      "id": "OSM_5683123939",
+      "lat": -33.0457024,
+      "lon": -71.4136118,
+      "name": "Paradero 16",
+      "osm_id": 5683123939
+    },
+    {
+      "along_route_m": 13638.8,
+      "distance_to_route_m": 5.2,
+      "id": "OSM_4428307299",
+      "lat": -33.0445055,
+      "lon": -71.4180462,
+      "name": "Paradero 17",
+      "osm_id": 4428307299
+    },
+    {
+      "along_route_m": 13865.1,
+      "distance_to_route_m": 22.4,
+      "id": "OSM_4524950435",
+      "lat": -33.044019,
+      "lon": -71.4204207,
+      "name": "OSM 4524950435",
+      "osm_id": 4524950435
+    },
+    {
+      "along_route_m": 13911.5,
+      "distance_to_route_m": 8.7,
+      "id": "OSM_4524950434",
+      "lat": -33.0436081,
+      "lon": -71.4207688,
+      "name": "OSM 4524950434",
+      "osm_id": 4524950434
+    },
+    {
+      "along_route_m": 14525.4,
+      "distance_to_route_m": 11.2,
+      "id": "OSM_4524950429",
+      "lat": -33.042125,
+      "lon": -71.4270877,
+      "name": "Paradero 18",
+      "osm_id": 4524950429
+    },
+    {
+      "along_route_m": 14588.7,
+      "distance_to_route_m": 8.2,
+      "id": "OSM_6786856366",
+      "lat": -33.0423342,
+      "lon": -71.4277545,
+      "name": "Paradero 18",
+      "osm_id": 6786856366
+    },
+    {
+      "along_route_m": 14898.5,
+      "distance_to_route_m": 6.3,
+      "id": "OSM_6808369290",
+      "lat": -33.0425816,
+      "lon": -71.4310133,
+      "name": "OSM 6808369290",
+      "osm_id": 6808369290
+    },
+    {
+      "along_route_m": 14962.4,
+      "distance_to_route_m": 7.0,
+      "id": "OSM_10234578656",
+      "lat": -33.0426367,
+      "lon": -71.4317094,
+      "name": "OSM 10234578656",
+      "osm_id": 10234578656
+    },
+    {
+      "along_route_m": 15216.6,
+      "distance_to_route_m": 6.5,
+      "id": "OSM_8423916915",
+      "lat": -33.0433163,
+      "lon": -71.4343123,
+      "name": "OSM 8423916915",
+      "osm_id": 8423916915
+    },
+    {
+      "along_route_m": 15271.7,
+      "distance_to_route_m": 9.1,
+      "id": "OSM_8423916916",
+      "lat": -33.0435991,
+      "lon": -71.434805,
+      "name": "OSM 8423916916",
+      "osm_id": 8423916916
+    },
+    {
+      "along_route_m": 15444.0,
+      "distance_to_route_m": 5.9,
+      "id": "OSM_10234578657",
+      "lat": -33.0442291,
+      "lon": -71.4365018,
+      "name": "Paradero 22",
+      "osm_id": 10234578657
+    },
+    {
+      "along_route_m": 15862.8,
+      "distance_to_route_m": 5.2,
+      "id": "OSM_3884186825",
+      "lat": -33.0460558,
+      "lon": -71.4404341,
+      "name": "Paradero 23",
+      "osm_id": 3884186825
+    },
+    {
+      "along_route_m": 15942.0,
+      "distance_to_route_m": 104.3,
+      "id": "OSM_11970877527",
+      "lat": -33.0454624,
+      "lon": -71.4418008,
+      "name": "OSM 11970877527",
+      "osm_id": 11970877527
+    },
+    {
+      "along_route_m": 16351.0,
+      "distance_to_route_m": 94.8,
+      "id": "OSM_4868462256",
+      "lat": -33.0481342,
+      "lon": -71.445568,
+      "name": "OSM 4868462256",
+      "osm_id": 4868462256
+    },
+    {
+      "along_route_m": 16612.9,
+      "distance_to_route_m": 103.7,
+      "id": "OSM_4197967224",
+      "lat": -33.0457314,
+      "lon": -71.4433774,
+      "name": "OSM 4197967224",
+      "osm_id": 4197967224
+    },
+    {
+      "along_route_m": 16673.0,
+      "distance_to_route_m": 2.1,
+      "id": "OSM_269811143",
+      "lat": -33.0455917,
+      "lon": -71.4449618,
+      "name": "OSM 269811143",
+      "osm_id": 269811143
+    }
+  ],
+  "C02_R": [
+    {
+      "along_route_m": 0.0,
+      "distance_to_route_m": 25.9,
+      "id": "OSM_3241354640",
+      "lat": -33.0455136,
+      "lon": -71.4450735,
+      "name": "Estación Quilpué",
+      "osm_id": 3241354640
+    },
+    {
+      "along_route_m": 250.0,
+      "distance_to_route_m": 27.0,
+      "id": "OSM_4868462256",
+      "lat": -33.0481342,
+      "lon": -71.445568,
+      "name": "OSM 4868462256",
+      "osm_id": 4868462256
+    },
+    {
+      "along_route_m": 616.1,
+      "distance_to_route_m": 5.2,
+      "id": "OSM_4050827604",
+      "lat": -33.0482767,
+      "lon": -71.4415409,
+      "name": "Paradero 25 1/2",
+      "osm_id": 4050827604
+    },
+    {
+      "along_route_m": 736.1,
+      "distance_to_route_m": 5.7,
+      "id": "OSM_4050827605",
+      "lat": -33.0483092,
+      "lon": -71.4402573,
+      "name": "Paradero 25",
+      "osm_id": 4050827605
+    },
+    {
+      "along_route_m": 991.7,
+      "distance_to_route_m": 5.6,
+      "id": "OSM_4198163496",
+      "lat": -33.048374,
+      "lon": -71.4375235,
+      "name": "Paradero 24",
+      "osm_id": 4198163496
+    },
+    {
+      "along_route_m": 1358.2,
+      "distance_to_route_m": 6.2,
+      "id": "OSM_4050827606",
+      "lat": -33.0484643,
+      "lon": -71.4335948,
+      "name": "Hospital",
+      "osm_id": 4050827606
+    },
+    {
+      "along_route_m": 1478.4,
+      "distance_to_route_m": 100.1,
+      "id": "OSM_3887619693",
+      "lat": -33.047543,
+      "lon": -71.4322606,
+      "name": "OSM 3887619693",
+      "osm_id": 3887619693
+    },
+    {
+      "along_route_m": 1869.1,
+      "distance_to_route_m": 11.8,
+      "id": "OSM_4524950430",
+      "lat": -33.0486167,
+      "lon": -71.4281221,
+      "name": "Paradero 18",
+      "osm_id": 4524950430
+    },
+    {
+      "along_route_m": 2959.5,
+      "distance_to_route_m": 21.0,
+      "id": "OSM_4524950434",
+      "lat": -33.0436081,
+      "lon": -71.4207688,
+      "name": "OSM 4524950434",
+      "osm_id": 4524950434
+    },
+    {
+      "along_route_m": 3006.0,
+      "distance_to_route_m": 9.3,
+      "id": "OSM_4524950435",
+      "lat": -33.044019,
+      "lon": -71.4204207,
+      "name": "OSM 4524950435",
+      "osm_id": 4524950435
+    },
+    {
+      "along_route_m": 3207.9,
+      "distance_to_route_m": 11.2,
+      "id": "OSM_4428307300",
+      "lat": -33.0446801,
+      "lon": -71.4184032,
+      "name": "Paradero 17",
+      "osm_id": 4428307300
+    },
+    {
+      "along_route_m": 3669.8,
+      "distance_to_route_m": 7.3,
+      "id": "OSM_5683123939",
+      "lat": -33.0457024,
+      "lon": -71.4136118,
+      "name": "Paradero 16",
+      "osm_id": 5683123939
+    },
+    {
+      "along_route_m": 3731.6,
+      "distance_to_route_m": 10.4,
+      "id": "OSM_5567963297",
+      "lat": -33.0460587,
+      "lon": -71.413068,
+      "name": "Paradero 16",
+      "osm_id": 5567963297
+    },
+    {
+      "along_route_m": 4031.7,
+      "distance_to_route_m": 9.8,
+      "id": "OSM_4524950428",
+      "lat": -33.0463724,
+      "lon": -71.4098307,
+      "name": "Paradero 15",
+      "osm_id": 4524950428
+    },
+    {
+      "along_route_m": 4066.9,
+      "distance_to_route_m": 5.0,
+      "id": "OSM_5724213386",
+      "lat": -33.0465375,
+      "lon": -71.4095098,
+      "name": "Paradero 15",
+      "osm_id": 5724213386
+    },
+    {
+      "along_route_m": 4147.0,
+      "distance_to_route_m": 100.8,
+      "id": "OSM_4358039269",
+      "lat": -33.0474163,
+      "lon": -71.4087323,
+      "name": "OSM 4358039269",
+      "osm_id": 4358039269
+    },
+    {
+      "along_route_m": 4209.6,
+      "distance_to_route_m": 7.0,
+      "id": "OSM_4274825189",
+      "lat": -33.0466068,
+      "lon": -71.4079884,
+      "name": "Paradero 14 1/2",
+      "osm_id": 4274825189
+    },
+    {
+      "along_route_m": 4277.3,
+      "distance_to_route_m": 6.5,
+      "id": "OSM_4274825289",
+      "lat": -33.0465116,
+      "lon": -71.4072594,
+      "name": "Paradero 14",
+      "osm_id": 4274825289
+    },
+    {
+      "along_route_m": 4322.5,
+      "distance_to_route_m": 8.5,
+      "id": "OSM_5967791277",
+      "lat": -33.0466261,
+      "lon": -71.4067655,
+      "name": "Paradero 14",
+      "osm_id": 5967791277
+    },
+    {
+      "along_route_m": 6196.3,
+      "distance_to_route_m": 3.9,
+      "id": "OSM_10234578704",
+      "lat": -33.0380925,
+      "lon": -71.4051421,
+      "name": "OSM 10234578704",
+      "osm_id": 10234578704
+    },
+    {
+      "along_route_m": 6537.9,
+      "distance_to_route_m": 4.8,
+      "id": "OSM_7816266093",
+      "lat": -33.0379745,
+      "lon": -71.4014849,
+      "name": "OSM 7816266093",
+      "osm_id": 7816266093
+    },
+    {
+      "along_route_m": 6658.0,
+      "distance_to_route_m": 4.9,
+      "id": "OSM_7816266094",
+      "lat": -33.0379385,
+      "lon": -71.4001961,
+      "name": "OSM 7816266094",
+      "osm_id": 7816266094
+    },
+    {
+      "along_route_m": 6707.1,
+      "distance_to_route_m": 82.6,
+      "id": "OSM_1850832718",
+      "lat": -33.0379445,
+      "lon": -71.3987868,
+      "name": "OSM 1850832718",
+      "osm_id": 1850832718
+    },
+    {
+      "along_route_m": 7015.8,
+      "distance_to_route_m": 4.2,
+      "id": "OSM_7040895653",
+      "lat": -33.0390487,
+      "lon": -71.3976493,
+      "name": "OSM 7040895653",
+      "osm_id": 7040895653
+    },
+    {
+      "along_route_m": 7245.2,
+      "distance_to_route_m": 4.8,
+      "id": "OSM_7816266104",
+      "lat": -33.0392831,
+      "lon": -71.3952045,
+      "name": "OSM 7816266104",
+      "osm_id": 7816266104
+    },
+    {
+      "along_route_m": 7292.3,
+      "distance_to_route_m": 24.8,
+      "id": "OSM_7816266105",
+      "lat": -33.0394663,
+      "lon": -71.3946292,
+      "name": "OSM 7816266105",
+      "osm_id": 7816266105
+    },
+    {
+      "along_route_m": 7412.4,
+      "distance_to_route_m": 5.9,
+      "id": "OSM_13984394353",
+      "lat": -33.0381667,
+      "lon": -71.3946265,
+      "name": "OSM 13984394353",
+      "osm_id": 13984394353
+    },
+    {
+      "along_route_m": 9413.8,
+      "distance_to_route_m": 3.1,
+      "id": "OSM_5735398253",
+      "lat": -33.041672,
+      "lon": -71.3851832,
+      "name": "OSM 5735398253",
+      "osm_id": 5735398253
+    },
+    {
+      "along_route_m": 10205.4,
+      "distance_to_route_m": 4.1,
+      "id": "OSM_9560909441",
+      "lat": -33.0388604,
+      "lon": -71.379529,
+      "name": "OSM 9560909441",
+      "osm_id": 9560909441
+    },
+    {
+      "along_route_m": 10391.7,
+      "distance_to_route_m": 4.4,
+      "id": "OSM_7816266239",
+      "lat": -33.0391268,
+      "lon": -71.3775556,
+      "name": "OSM 7816266239",
+      "osm_id": 7816266239
+    },
+    {
+      "along_route_m": 11113.6,
+      "distance_to_route_m": 6.6,
+      "id": "OSM_8482939662",
+      "lat": -33.0442665,
+      "lon": -71.3763189,
+      "name": "OSM 8482939662",
+      "osm_id": 8482939662
+    },
+    {
+      "along_route_m": 11420.3,
+      "distance_to_route_m": 5.3,
+      "id": "OSM_8482939661",
+      "lat": -33.0441774,
+      "lon": -71.3730338,
+      "name": "OSM 8482939661",
+      "osm_id": 8482939661
+    },
+    {
+      "along_route_m": 11466.3,
+      "distance_to_route_m": 9.5,
+      "id": "OSM_4428307302",
+      "lat": -33.0442987,
+      "lon": -71.3725364,
+      "name": "OSM 4428307302",
+      "osm_id": 4428307302
+    },
+    {
+      "along_route_m": 11630.9,
+      "distance_to_route_m": 8.6,
+      "id": "OSM_6405410606",
+      "lat": -33.0440824,
+      "lon": -71.3707776,
+      "name": "OSM 6405410606",
+      "osm_id": 6405410606
+    },
+    {
+      "along_route_m": 11681.6,
+      "distance_to_route_m": 5.8,
+      "id": "OSM_4517435481",
+      "lat": -33.0441891,
+      "lon": -71.3702331,
+      "name": "OSM 4517435481",
+      "osm_id": 4517435481
+    },
+    {
+      "along_route_m": 11777.5,
+      "distance_to_route_m": 7.0,
+      "id": "OSM_4517435480",
+      "lat": -33.0441599,
+      "lon": -71.3692045,
+      "name": "Paradero 4 1/2",
+      "osm_id": 4517435480
+    },
+    {
+      "along_route_m": 11827.1,
+      "distance_to_route_m": 6.2,
+      "id": "OSM_3902409408",
+      "lat": -33.0440031,
+      "lon": -71.3686838,
+      "name": "Paradero 4 1/2",
+      "osm_id": 3902409408
+    },
+    {
+      "along_route_m": 12207.3,
+      "distance_to_route_m": 6.8,
+      "id": "OSM_4400578361",
+      "lat": -33.0437503,
+      "lon": -71.3646169,
+      "name": "Paradero 4",
+      "osm_id": 4400578361
+    },
+    {
+      "along_route_m": 12673.4,
+      "distance_to_route_m": 5.2,
+      "id": "OSM_3890470670",
+      "lat": -33.042787,
+      "lon": -71.3598634,
+      "name": "Paradero 3 1/2",
+      "osm_id": 3890470670
+    },
+    {
+      "along_route_m": 13092.8,
+      "distance_to_route_m": 4.5,
+      "id": "OSM_4364886855",
+      "lat": -33.0439282,
+      "lon": -71.3559772,
+      "name": "Paradero 3",
+      "osm_id": 4364886855
+    },
+    {
+      "along_route_m": 13280.6,
+      "distance_to_route_m": 7.1,
+      "id": "OSM_4428307305",
+      "lat": -33.0452901,
+      "lon": -71.3547671,
+      "name": "Paradero 2",
+      "osm_id": 4428307305
+    },
+    {
+      "along_route_m": 13387.3,
+      "distance_to_route_m": 7.4,
+      "id": "OSM_8482939659",
+      "lat": -33.0459408,
+      "lon": -71.3539071,
+      "name": "Paradero 2",
+      "osm_id": 8482939659
+    },
+    {
+      "along_route_m": 13847.2,
+      "distance_to_route_m": 3.7,
+      "id": "OSM_5888278138",
+      "lat": -33.0495896,
+      "lon": -71.3551779,
+      "name": "OSM 5888278138",
+      "osm_id": 5888278138
+    },
+    {
+      "along_route_m": 14042.4,
+      "distance_to_route_m": 14.4,
+      "id": "OSM_5885973522",
+      "lat": -33.0511954,
+      "lon": -71.3560546,
+      "name": "OSM 5885973522",
+      "osm_id": 5885973522
+    },
+    {
+      "along_route_m": 14106.8,
+      "distance_to_route_m": 7.9,
+      "id": "OSM_5887972423",
+      "lat": -33.0517074,
+      "lon": -71.3562213,
+      "name": "OSM 5887972423",
+      "osm_id": 5887972423
+    },
+    {
+      "along_route_m": 14652.6,
+      "distance_to_route_m": 3.5,
+      "id": "OSM_11526629954",
+      "lat": -33.0565858,
+      "lon": -71.3553308,
+      "name": "Avenida Vicepresidente Bernardo Leighton - Antumapu",
+      "osm_id": 11526629954
+    },
+    {
+      "along_route_m": 14891.2,
+      "distance_to_route_m": 4.5,
+      "id": "OSM_5885973509",
+      "lat": -33.0586892,
+      "lon": -71.3547435,
+      "name": "Avenida Vicepresidente Bernardo Leighton - Río Baker",
+      "osm_id": 5885973509
+    },
+    {
+      "along_route_m": 14988.1,
+      "distance_to_route_m": 4.1,
+      "id": "OSM_5885973508",
+      "lat": -33.0595505,
+      "lon": -71.3545558,
+      "name": "OSM 5885973508",
+      "osm_id": 5885973508
+    },
+    {
+      "along_route_m": 16872.2,
+      "distance_to_route_m": 4.5,
+      "id": "OSM_12051944441",
+      "lat": -33.0669689,
+      "lon": -71.3641781,
+      "name": "OSM 12051944441",
+      "osm_id": 12051944441
+    }
+  ],
+  "C03Y_I": [
+    {
+      "along_route_m": 0.0,
+      "distance_to_route_m": 31.7,
+      "id": "OSM_5768918452",
+      "lat": -33.0734359,
+      "lon": -71.4254362,
+      "name": "OSM 5768918452",
+      "osm_id": 5768918452
+    },
+    {
+      "along_route_m": 123.3,
+      "distance_to_route_m": 1.0,
+      "id": "OSM_5768923453",
+      "lat": -33.0724647,
+      "lon": -71.4245177,
+      "name": "OSM 5768923453",
+      "osm_id": 5768923453
+    },
+    {
+      "along_route_m": 327.2,
+      "distance_to_route_m": 0.7,
+      "id": "OSM_297890161",
+      "lat": -33.0707998,
+      "lon": -71.4235766,
+      "name": "OSM 297890161",
+      "osm_id": 297890161
+    },
+    {
+      "along_route_m": 1041.0,
+      "distance_to_route_m": 4.8,
+      "id": "OSM_3911298875",
+      "lat": -33.0659619,
+      "lon": -71.4259334,
+      "name": "OSM 3911298875",
+      "osm_id": 3911298875
+    },
+    {
+      "along_route_m": 1824.1,
+      "distance_to_route_m": 4.9,
+      "id": "OSM_6563339040",
+      "lat": -33.0638344,
+      "lon": -71.4335268,
+      "name": "OSM 6563339040",
+      "osm_id": 6563339040
+    },
+    {
+      "along_route_m": 2067.3,
+      "distance_to_route_m": 18.7,
+      "id": "OSM_13788694964",
+      "lat": -33.0637612,
+      "lon": -71.4363255,
+      "name": "OSM 13788694964",
+      "osm_id": 13788694964
+    },
+    {
+      "along_route_m": 3368.4,
+      "distance_to_route_m": 7.8,
+      "id": "OSM_7579129725",
+      "lat": -33.0672352,
+      "lon": -71.4381373,
+      "name": "OSM 7579129725",
+      "osm_id": 7579129725
+    },
+    {
+      "along_route_m": 3674.7,
+      "distance_to_route_m": 2.6,
+      "id": "OSM_7579129720",
+      "lat": -33.0645693,
+      "lon": -71.4380072,
+      "name": "OSM 7579129720",
+      "osm_id": 7579129720
+    },
+    {
+      "along_route_m": 4850.5,
+      "distance_to_route_m": 112.2,
+      "id": "OSM_4211460376",
+      "lat": -33.055498,
+      "lon": -71.4374076,
+      "name": "OSM 4211460376",
+      "osm_id": 4211460376
+    },
+    {
+      "along_route_m": 4918.0,
+      "distance_to_route_m": 13.3,
+      "id": "OSM_6517330360",
+      "lat": -33.05468,
+      "lon": -71.4385242,
+      "name": "OSM 6517330360",
+      "osm_id": 6517330360
+    },
+    {
+      "along_route_m": 6245.6,
+      "distance_to_route_m": 66.0,
+      "id": "OSM_4868462256",
+      "lat": -33.0481342,
+      "lon": -71.445568,
+      "name": "OSM 4868462256",
+      "osm_id": 4868462256
+    },
+    {
+      "along_route_m": 6562.6,
+      "distance_to_route_m": 103.8,
+      "id": "OSM_4197967224",
+      "lat": -33.0457314,
+      "lon": -71.4433774,
+      "name": "OSM 4197967224",
+      "osm_id": 4197967224
+    },
+    {
+      "along_route_m": 6621.0,
+      "distance_to_route_m": 1.7,
+      "id": "OSM_269811143",
+      "lat": -33.0455917,
+      "lon": -71.4449618,
+      "name": "OSM 269811143",
+      "osm_id": 269811143
+    }
+  ],
+  "C03Y_R": [
+    {
+      "along_route_m": 0.0,
+      "distance_to_route_m": 26.6,
+      "id": "OSM_3241354640",
+      "lat": -33.0455136,
+      "lon": -71.4450735,
+      "name": "Estación Quilpué",
+      "osm_id": 3241354640
+    },
+    {
+      "along_route_m": 249.0,
+      "distance_to_route_m": 27.0,
+      "id": "OSM_4868462256",
+      "lat": -33.0481342,
+      "lon": -71.445568,
+      "name": "OSM 4868462256",
+      "osm_id": 4868462256
+    },
+    {
+      "along_route_m": 615.1,
+      "distance_to_route_m": 5.2,
+      "id": "OSM_4050827604",
+      "lat": -33.0482767,
+      "lon": -71.4415409,
+      "name": "Paradero 25 1/2",
+      "osm_id": 4050827604
+    },
+    {
+      "along_route_m": 735.0,
+      "distance_to_route_m": 5.4,
+      "id": "OSM_4050827605",
+      "lat": -33.0483092,
+      "lon": -71.4402573,
+      "name": "Paradero 25",
+      "osm_id": 4050827605
+    },
+    {
+      "along_route_m": 911.3,
+      "distance_to_route_m": 79.4,
+      "id": "OSM_4198163496",
+      "lat": -33.048374,
+      "lon": -71.4375235,
+      "name": "Paradero 24",
+      "osm_id": 4198163496
+    },
+    {
+      "along_route_m": 1750.4,
+      "distance_to_route_m": 7.1,
+      "id": "OSM_6517330360",
+      "lat": -33.05468,
+      "lon": -71.4385242,
+      "name": "OSM 6517330360",
+      "osm_id": 6517330360
+    },
+    {
+      "along_route_m": 1820.9,
+      "distance_to_route_m": 109.3,
+      "id": "OSM_4211460376",
+      "lat": -33.055498,
+      "lon": -71.4374076,
+      "name": "OSM 4211460376",
+      "osm_id": 4211460376
+    },
+    {
+      "along_route_m": 3293.7,
+      "distance_to_route_m": 3.4,
+      "id": "OSM_7579129725",
+      "lat": -33.0672352,
+      "lon": -71.4381373,
+      "name": "OSM 7579129725",
+      "osm_id": 7579129725
+    },
+    {
+      "along_route_m": 4222.9,
+      "distance_to_route_m": 5.8,
+      "id": "OSM_7579129720",
+      "lat": -33.0645693,
+      "lon": -71.4380072,
+      "name": "OSM 7579129720",
+      "osm_id": 7579129720
+    },
+    {
+      "along_route_m": 4416.7,
+      "distance_to_route_m": 3.8,
+      "id": "OSM_13788694964",
+      "lat": -33.0637612,
+      "lon": -71.4363255,
+      "name": "OSM 13788694964",
+      "osm_id": 13788694964
+    },
+    {
+      "along_route_m": 4677.9,
+      "distance_to_route_m": 4.7,
+      "id": "OSM_6563339040",
+      "lat": -33.0638344,
+      "lon": -71.4335268,
+      "name": "OSM 6563339040",
+      "osm_id": 6563339040
+    },
+    {
+      "along_route_m": 5460.6,
+      "distance_to_route_m": 3.8,
+      "id": "OSM_3911298875",
+      "lat": -33.0659619,
+      "lon": -71.4259334,
+      "name": "OSM 3911298875",
+      "osm_id": 3911298875
+    },
+    {
+      "along_route_m": 5817.6,
+      "distance_to_route_m": 4.9,
+      "id": "OSM_6571486940",
+      "lat": -33.0685839,
+      "lon": -71.4263597,
+      "name": "OSM 6571486940",
+      "osm_id": 6571486940
+    },
+    {
+      "along_route_m": 6135.7,
+      "distance_to_route_m": 4.5,
+      "id": "OSM_5768918451",
+      "lat": -33.0703894,
+      "lon": -71.4249858,
+      "name": "OSM 5768918451",
+      "osm_id": 5768918451
+    },
+    {
+      "along_route_m": 6301.6,
+      "distance_to_route_m": 9.5,
+      "id": "OSM_5768918450",
+      "lat": -33.0717113,
+      "lon": -71.4258048,
+      "name": "OSM 5768918450",
+      "osm_id": 5768918450
+    },
+    {
+      "along_route_m": 6486.0,
+      "distance_to_route_m": 4.5,
+      "id": "OSM_6571486975",
+      "lat": -33.0731012,
+      "lon": -71.4262658,
+      "name": "OSM 6571486975",
+      "osm_id": 6571486975
+    },
+    {
+      "along_route_m": 6571.3,
+      "distance_to_route_m": 5.2,
+      "id": "OSM_5768918452",
+      "lat": -33.0734359,
+      "lon": -71.4254362,
+      "name": "OSM 5768918452",
+      "osm_id": 5768918452
+    }
+  ],
+  "C03_I": [
+    {
+      "along_route_m": 0.0,
+      "distance_to_route_m": 31.7,
+      "id": "OSM_5768918452",
+      "lat": -33.0734359,
+      "lon": -71.4254362,
+      "name": "OSM 5768918452",
+      "osm_id": 5768918452
+    },
+    {
+      "along_route_m": 123.3,
+      "distance_to_route_m": 1.0,
+      "id": "OSM_5768923453",
+      "lat": -33.0724647,
+      "lon": -71.4245177,
+      "name": "OSM 5768923453",
+      "osm_id": 5768923453
+    },
+    {
+      "along_route_m": 327.2,
+      "distance_to_route_m": 0.7,
+      "id": "OSM_297890161",
+      "lat": -33.0707998,
+      "lon": -71.4235766,
+      "name": "OSM 297890161",
+      "osm_id": 297890161
+    },
+    {
+      "along_route_m": 1041.0,
+      "distance_to_route_m": 4.8,
+      "id": "OSM_3911298875",
+      "lat": -33.0659619,
+      "lon": -71.4259334,
+      "name": "OSM 3911298875",
+      "osm_id": 3911298875
+    },
+    {
+      "along_route_m": 1824.1,
+      "distance_to_route_m": 4.9,
+      "id": "OSM_6563339040",
+      "lat": -33.0638344,
+      "lon": -71.4335268,
+      "name": "OSM 6563339040",
+      "osm_id": 6563339040
+    },
+    {
+      "along_route_m": 2085.2,
+      "distance_to_route_m": 7.1,
+      "id": "OSM_13788694964",
+      "lat": -33.0637612,
+      "lon": -71.4363255,
+      "name": "OSM 13788694964",
+      "osm_id": 13788694964
+    },
+    {
+      "along_route_m": 2178.5,
+      "distance_to_route_m": 99.4,
+      "id": "OSM_7579129720",
+      "lat": -33.0645693,
+      "lon": -71.4380072,
+      "name": "OSM 7579129720",
+      "osm_id": 7579129720
+    },
+    {
+      "along_route_m": 3255.5,
+      "distance_to_route_m": 112.2,
+      "id": "OSM_4211460376",
+      "lat": -33.055498,
+      "lon": -71.4374076,
+      "name": "OSM 4211460376",
+      "osm_id": 4211460376
+    },
+    {
+      "along_route_m": 3323.0,
+      "distance_to_route_m": 13.3,
+      "id": "OSM_6517330360",
+      "lat": -33.05468,
+      "lon": -71.4385242,
+      "name": "OSM 6517330360",
+      "osm_id": 6517330360
+    },
+    {
+      "along_route_m": 4650.7,
+      "distance_to_route_m": 66.0,
+      "id": "OSM_4868462256",
+      "lat": -33.0481342,
+      "lon": -71.445568,
+      "name": "OSM 4868462256",
+      "osm_id": 4868462256
+    },
+    {
+      "along_route_m": 4967.7,
+      "distance_to_route_m": 103.8,
+      "id": "OSM_4197967224",
+      "lat": -33.0457314,
+      "lon": -71.4433774,
+      "name": "OSM 4197967224",
+      "osm_id": 4197967224
+    },
+    {
+      "along_route_m": 5026.1,
+      "distance_to_route_m": 1.6,
+      "id": "OSM_269811143",
+      "lat": -33.0455917,
+      "lon": -71.4449618,
+      "name": "OSM 269811143",
+      "osm_id": 269811143
+    }
+  ],
+  "C03_R": [
+    {
+      "along_route_m": 0.0,
+      "distance_to_route_m": 23.7,
+      "id": "OSM_3241354640",
+      "lat": -33.0455136,
+      "lon": -71.4450735,
+      "name": "Estación Quilpué",
+      "osm_id": 3241354640
+    },
+    {
+      "along_route_m": 252.4,
+      "distance_to_route_m": 27.0,
+      "id": "OSM_4868462256",
+      "lat": -33.0481342,
+      "lon": -71.445568,
+      "name": "OSM 4868462256",
+      "osm_id": 4868462256
+    },
+    {
+      "along_route_m": 618.4,
+      "distance_to_route_m": 5.2,
+      "id": "OSM_4050827604",
+      "lat": -33.0482767,
+      "lon": -71.4415409,
+      "name": "Paradero 25 1/2",
+      "osm_id": 4050827604
+    },
+    {
+      "along_route_m": 738.4,
+      "distance_to_route_m": 5.4,
+      "id": "OSM_4050827605",
+      "lat": -33.0483092,
+      "lon": -71.4402573,
+      "name": "Paradero 25",
+      "osm_id": 4050827605
+    },
+    {
+      "along_route_m": 914.6,
+      "distance_to_route_m": 79.4,
+      "id": "OSM_4198163496",
+      "lat": -33.048374,
+      "lon": -71.4375235,
+      "name": "Paradero 24",
+      "osm_id": 4198163496
+    },
+    {
+      "along_route_m": 1753.8,
+      "distance_to_route_m": 7.1,
+      "id": "OSM_6517330360",
+      "lat": -33.05468,
+      "lon": -71.4385242,
+      "name": "OSM 6517330360",
+      "osm_id": 6517330360
+    },
+    {
+      "along_route_m": 1824.2,
+      "distance_to_route_m": 109.3,
+      "id": "OSM_4211460376",
+      "lat": -33.055498,
+      "lon": -71.4374076,
+      "name": "OSM 4211460376",
+      "osm_id": 4211460376
+    },
+    {
+      "along_route_m": 2890.9,
+      "distance_to_route_m": 102.5,
+      "id": "OSM_7579129720",
+      "lat": -33.0645693,
+      "lon": -71.4380072,
+      "name": "OSM 7579129720",
+      "osm_id": 7579129720
+    },
+    {
+      "along_route_m": 2982.3,
+      "distance_to_route_m": 3.8,
+      "id": "OSM_13788694964",
+      "lat": -33.0637612,
+      "lon": -71.4363255,
+      "name": "OSM 13788694964",
+      "osm_id": 13788694964
+    },
+    {
+      "along_route_m": 3243.6,
+      "distance_to_route_m": 4.7,
+      "id": "OSM_6563339040",
+      "lat": -33.0638344,
+      "lon": -71.4335268,
+      "name": "OSM 6563339040",
+      "osm_id": 6563339040
+    },
+    {
+      "along_route_m": 4026.3,
+      "distance_to_route_m": 3.8,
+      "id": "OSM_3911298875",
+      "lat": -33.0659619,
+      "lon": -71.4259334,
+      "name": "OSM 3911298875",
+      "osm_id": 3911298875
+    },
+    {
+      "along_route_m": 4383.3,
+      "distance_to_route_m": 4.9,
+      "id": "OSM_6571486940",
+      "lat": -33.0685839,
+      "lon": -71.4263597,
+      "name": "OSM 6571486940",
+      "osm_id": 6571486940
+    },
+    {
+      "along_route_m": 4701.4,
+      "distance_to_route_m": 4.3,
+      "id": "OSM_5768918451",
+      "lat": -33.0703894,
+      "lon": -71.4249858,
+      "name": "OSM 5768918451",
+      "osm_id": 5768918451
+    },
+    {
+      "along_route_m": 4867.3,
+      "distance_to_route_m": 9.5,
+      "id": "OSM_5768918450",
+      "lat": -33.0717113,
+      "lon": -71.4258048,
+      "name": "OSM 5768918450",
+      "osm_id": 5768918450
+    },
+    {
+      "along_route_m": 5051.7,
+      "distance_to_route_m": 4.5,
+      "id": "OSM_6571486975",
+      "lat": -33.0731012,
+      "lon": -71.4262658,
+      "name": "OSM 6571486975",
+      "osm_id": 6571486975
+    },
+    {
+      "along_route_m": 5137.0,
+      "distance_to_route_m": 5.2,
+      "id": "OSM_5768918452",
+      "lat": -33.0734359,
+      "lon": -71.4254362,
+      "name": "OSM 5768918452",
+      "osm_id": 5768918452
+    }
+  ],
+  "C04_I": [
+    {
+      "along_route_m": 55.2,
+      "distance_to_route_m": 4.5,
+      "id": "OSM_12051944441",
+      "lat": -33.0669689,
+      "lon": -71.3641781,
+      "name": "OSM 12051944441",
+      "osm_id": 12051944441
+    },
+    {
+      "along_route_m": 2121.8,
+      "distance_to_route_m": 14.7,
+      "id": "OSM_4211431547",
+      "lat": -33.0562828,
+      "lon": -71.3733377,
+      "name": "OSM 4211431547",
+      "osm_id": 4211431547
+    },
+    {
+      "along_route_m": 2434.6,
+      "distance_to_route_m": 92.3,
+      "id": "OSM_5198614085",
+      "lat": -33.0573001,
+      "lon": -71.3764814,
+      "name": "OSM 5198614085",
+      "osm_id": 5198614085
+    },
+    {
+      "along_route_m": 2518.9,
+      "distance_to_route_m": 108.7,
+      "id": "OSM_3241354641",
+      "lat": -33.0572026,
+      "lon": -71.3783268,
+      "name": "San Enrique 1040",
+      "osm_id": 3241354641
+    },
+    {
+      "along_route_m": 2617.0,
+      "distance_to_route_m": 5.0,
+      "id": "OSM_7154981827",
+      "lat": -33.056085,
+      "lon": -71.3782945,
+      "name": "OSM 7154981827",
+      "osm_id": 7154981827
+    },
+    {
+      "along_route_m": 3102.2,
+      "distance_to_route_m": 3.6,
+      "id": "OSM_7636867022",
+      "lat": -33.0553696,
+      "lon": -71.3829173,
+      "name": "OSM 7636867022",
+      "osm_id": 7636867022
+    },
+    {
+      "along_route_m": 3391.7,
+      "distance_to_route_m": 4.5,
+      "id": "OSM_7078921698",
+      "lat": -33.0576277,
+      "lon": -71.3844877,
+      "name": "OSM 7078921698",
+      "osm_id": 7078921698
+    },
+    {
+      "along_route_m": 3561.5,
+      "distance_to_route_m": 5.4,
+      "id": "OSM_7078921696",
+      "lat": -33.0589597,
+      "lon": -71.3853917,
+      "name": "OSM 7078921696",
+      "osm_id": 7078921696
+    },
+    {
+      "along_route_m": 3603.6,
+      "distance_to_route_m": 52.3,
+      "id": "OSM_4548970346",
+      "lat": -33.0595393,
+      "lon": -71.385077,
+      "name": "OSM 4548970346",
+      "osm_id": 4548970346
+    },
+    {
+      "along_route_m": 3644.6,
+      "distance_to_route_m": 107.8,
+      "id": "OSM_7078921695",
+      "lat": -33.0602758,
+      "lon": -71.3862406,
+      "name": "OSM 7078921695",
+      "osm_id": 7078921695
+    },
+    {
+      "along_route_m": 3690.0,
+      "distance_to_route_m": 6.7,
+      "id": "OSM_4548970347",
+      "lat": -33.0591677,
+      "lon": -71.3863816,
+      "name": "OSM 4548970347",
+      "osm_id": 4548970347
+    },
+    {
+      "along_route_m": 4105.6,
+      "distance_to_route_m": 4.6,
+      "id": "OSM_7607123854",
+      "lat": -33.0574883,
+      "lon": -71.3896188,
+      "name": "OSM 7607123854",
+      "osm_id": 7607123854
+    },
+    {
+      "along_route_m": 4454.9,
+      "distance_to_route_m": 4.3,
+      "id": "OSM_7607123841",
+      "lat": -33.0581021,
+      "lon": -71.39328,
+      "name": "OSM 7607123841",
+      "osm_id": 7607123841
+    },
+    {
+      "along_route_m": 4594.7,
+      "distance_to_route_m": 5.6,
+      "id": "OSM_7607123831",
+      "lat": -33.0583066,
+      "lon": -71.3947579,
+      "name": "OSM 7607123831",
+      "osm_id": 7607123831
+    },
+    {
+      "along_route_m": 4654.2,
+      "distance_to_route_m": 6.5,
+      "id": "OSM_7512397514",
+      "lat": -33.0584786,
+      "lon": -71.3953815,
+      "name": "OSM 7512397514",
+      "osm_id": 7512397514
+    },
+    {
+      "along_route_m": 4802.9,
+      "distance_to_route_m": 6.5,
+      "id": "OSM_7512397495",
+      "lat": -33.0583392,
+      "lon": -71.3969708,
+      "name": "OSM 7512397495",
+      "osm_id": 7512397495
+    },
+    {
+      "along_route_m": 4902.4,
+      "distance_to_route_m": 5.1,
+      "id": "OSM_7512397493",
+      "lat": -33.058324,
+      "lon": -71.3980403,
+      "name": "OSM 7512397493",
+      "osm_id": 7512397493
+    },
+    {
+      "along_route_m": 5184.7,
+      "distance_to_route_m": 4.0,
+      "id": "OSM_7512397487",
+      "lat": -33.0581729,
+      "lon": -71.4010557,
+      "name": "OSM 7512397487",
+      "osm_id": 7512397487
+    },
+    {
+      "along_route_m": 5602.2,
+      "distance_to_route_m": 4.2,
+      "id": "OSM_7512397485",
+      "lat": -33.057077,
+      "lon": -71.4050818,
+      "name": "OSM 7512397485",
+      "osm_id": 7512397485
+    },
+    {
+      "along_route_m": 5721.6,
+      "distance_to_route_m": 5.1,
+      "id": "OSM_7512391484",
+      "lat": -33.0568544,
+      "lon": -71.406333,
+      "name": "OSM 7512391484",
+      "osm_id": 7512391484
+    },
+    {
+      "along_route_m": 6283.1,
+      "distance_to_route_m": 5.8,
+      "id": "OSM_7629961215",
+      "lat": -33.0591474,
+      "lon": -71.4114708,
+      "name": "OSM 7629961215",
+      "osm_id": 7629961215
+    },
+    {
+      "along_route_m": 6525.5,
+      "distance_to_route_m": 71.0,
+      "id": "OSM_3241354639",
+      "lat": -33.0578885,
+      "lon": -71.4136331,
+      "name": "Fuente Clara Poniente",
+      "osm_id": 3241354639
+    },
+    {
+      "along_route_m": 6850.7,
+      "distance_to_route_m": 4.2,
+      "id": "OSM_7629961212",
+      "lat": -33.057737,
+      "lon": -71.4172717,
+      "name": "OSM 7629961212",
+      "osm_id": 7629961212
+    },
+    {
+      "along_route_m": 7364.6,
+      "distance_to_route_m": 5.4,
+      "id": "OSM_7629961204",
+      "lat": -33.0567094,
+      "lon": -71.4225818,
+      "name": "OSM 7629961204",
+      "osm_id": 7629961204
+    },
+    {
+      "along_route_m": 8778.5,
+      "distance_to_route_m": 39.6,
+      "id": "OSM_13912659338",
+      "lat": -33.0522022,
+      "lon": -71.4333549,
+      "name": "OSM 13912659338",
+      "osm_id": 13912659338
+    },
+    {
+      "along_route_m": 10706.0,
+      "distance_to_route_m": 105.9,
+      "id": "OSM_4197967224",
+      "lat": -33.0457314,
+      "lon": -71.4433774,
+      "name": "OSM 4197967224",
+      "osm_id": 4197967224
+    },
+    {
+      "along_route_m": 10763.4,
+      "distance_to_route_m": 1.6,
+      "id": "OSM_269811143",
+      "lat": -33.0455917,
+      "lon": -71.4449618,
+      "name": "OSM 269811143",
+      "osm_id": 269811143
+    },
+    {
+      "along_route_m": 11051.7,
+      "distance_to_route_m": 27.0,
+      "id": "OSM_4868462256",
+      "lat": -33.0481342,
+      "lon": -71.445568,
+      "name": "OSM 4868462256",
+      "osm_id": 4868462256
+    },
+    {
+      "along_route_m": 11417.8,
+      "distance_to_route_m": 5.2,
+      "id": "OSM_4050827604",
+      "lat": -33.0482767,
+      "lon": -71.4415409,
+      "name": "Paradero 25 1/2",
+      "osm_id": 4050827604
+    },
+    {
+      "along_route_m": 11537.7,
+      "distance_to_route_m": 5.4,
+      "id": "OSM_4050827605",
+      "lat": -33.0483092,
+      "lon": -71.4402573,
+      "name": "Paradero 25",
+      "osm_id": 4050827605
+    },
+    {
+      "along_route_m": 11793.0,
+      "distance_to_route_m": 6.0,
+      "id": "OSM_4198163496",
+      "lat": -33.048374,
+      "lon": -71.4375235,
+      "name": "Paradero 24",
+      "osm_id": 4198163496
+    },
+    {
+      "along_route_m": 12159.9,
+      "distance_to_route_m": 6.0,
+      "id": "OSM_4050827606",
+      "lat": -33.0484643,
+      "lon": -71.4335948,
+      "name": "Hospital",
+      "osm_id": 4050827606
+    },
+    {
+      "along_route_m": 12280.0,
+      "distance_to_route_m": 100.1,
+      "id": "OSM_3887619693",
+      "lat": -33.047543,
+      "lon": -71.4322606,
+      "name": "OSM 3887619693",
+      "osm_id": 3887619693
+    },
+    {
+      "along_route_m": 12670.7,
+      "distance_to_route_m": 11.8,
+      "id": "OSM_4524950430",
+      "lat": -33.0486167,
+      "lon": -71.4281221,
+      "name": "Paradero 18",
+      "osm_id": 4524950430
+    },
+    {
+      "along_route_m": 13761.0,
+      "distance_to_route_m": 21.0,
+      "id": "OSM_4524950434",
+      "lat": -33.0436081,
+      "lon": -71.4207688,
+      "name": "OSM 4524950434",
+      "osm_id": 4524950434
+    },
+    {
+      "along_route_m": 13807.5,
+      "distance_to_route_m": 9.2,
+      "id": "OSM_4524950435",
+      "lat": -33.044019,
+      "lon": -71.4204207,
+      "name": "OSM 4524950435",
+      "osm_id": 4524950435
+    },
+    {
+      "along_route_m": 14009.6,
+      "distance_to_route_m": 11.5,
+      "id": "OSM_4428307300",
+      "lat": -33.0446801,
+      "lon": -71.4184032,
+      "name": "Paradero 17",
+      "osm_id": 4428307300
+    },
+    {
+      "along_route_m": 14471.4,
+      "distance_to_route_m": 7.6,
+      "id": "OSM_5683123939",
+      "lat": -33.0457024,
+      "lon": -71.4136118,
+      "name": "Paradero 16",
+      "osm_id": 5683123939
+    },
+    {
+      "along_route_m": 14533.2,
+      "distance_to_route_m": 10.4,
+      "id": "OSM_5567963297",
+      "lat": -33.0460587,
+      "lon": -71.413068,
+      "name": "Paradero 16",
+      "osm_id": 5567963297
+    },
+    {
+      "along_route_m": 14833.2,
+      "distance_to_route_m": 9.8,
+      "id": "OSM_4524950428",
+      "lat": -33.0463724,
+      "lon": -71.4098307,
+      "name": "Paradero 15",
+      "osm_id": 4524950428
+    },
+    {
+      "along_route_m": 14868.5,
+      "distance_to_route_m": 5.2,
+      "id": "OSM_5724213386",
+      "lat": -33.0465375,
+      "lon": -71.4095098,
+      "name": "Paradero 15",
+      "osm_id": 5724213386
+    },
+    {
+      "along_route_m": 14948.6,
+      "distance_to_route_m": 100.8,
+      "id": "OSM_4358039269",
+      "lat": -33.0474163,
+      "lon": -71.4087323,
+      "name": "OSM 4358039269",
+      "osm_id": 4358039269
+    },
+    {
+      "along_route_m": 15011.0,
+      "distance_to_route_m": 7.5,
+      "id": "OSM_4274825189",
+      "lat": -33.0466068,
+      "lon": -71.4079884,
+      "name": "Paradero 14 1/2",
+      "osm_id": 4274825189
+    },
+    {
+      "along_route_m": 15078.8,
+      "distance_to_route_m": 6.5,
+      "id": "OSM_4274825289",
+      "lat": -33.0465116,
+      "lon": -71.4072594,
+      "name": "Paradero 14",
+      "osm_id": 4274825289
+    },
+    {
+      "along_route_m": 15124.1,
+      "distance_to_route_m": 8.5,
+      "id": "OSM_5967791277",
+      "lat": -33.0466261,
+      "lon": -71.4067655,
+      "name": "Paradero 14",
+      "osm_id": 5967791277
+    },
+    {
+      "along_route_m": 17052.3,
+      "distance_to_route_m": 4.2,
+      "id": "OSM_9943443345",
+      "lat": -33.0318418,
+      "lon": -71.4073014,
+      "name": "OSM 9943443345",
+      "osm_id": 9943443345
+    },
+    {
+      "along_route_m": 17500.9,
+      "distance_to_route_m": 87.9,
+      "id": "OSM_7816266077",
+      "lat": -33.0326689,
+      "lon": -71.402472,
+      "name": "OSM 7816266077",
+      "osm_id": 7816266077
+    }
+  ],
+  "C04_R": [
+    {
+      "along_route_m": 337.9,
+      "distance_to_route_m": 87.9,
+      "id": "OSM_7816266077",
+      "lat": -33.0326689,
+      "lon": -71.402472,
+      "name": "OSM 7816266077",
+      "osm_id": 7816266077
+    },
+    {
+      "along_route_m": 786.6,
+      "distance_to_route_m": 4.2,
+      "id": "OSM_9943443345",
+      "lat": -33.0318418,
+      "lon": -71.4073014,
+      "name": "OSM 9943443345",
+      "osm_id": 9943443345
+    },
+    {
+      "along_route_m": 2714.8,
+      "distance_to_route_m": 8.5,
+      "id": "OSM_5967791277",
+      "lat": -33.0466261,
+      "lon": -71.4067655,
+      "name": "Paradero 14",
+      "osm_id": 5967791277
+    },
+    {
+      "along_route_m": 2760.1,
+      "distance_to_route_m": 6.5,
+      "id": "OSM_4274825289",
+      "lat": -33.0465116,
+      "lon": -71.4072594,
+      "name": "Paradero 14",
+      "osm_id": 4274825289
+    },
+    {
+      "along_route_m": 2827.8,
+      "distance_to_route_m": 7.5,
+      "id": "OSM_4274825189",
+      "lat": -33.0466068,
+      "lon": -71.4079884,
+      "name": "Paradero 14 1/2",
+      "osm_id": 4274825189
+    },
+    {
+      "along_route_m": 2890.3,
+      "distance_to_route_m": 100.8,
+      "id": "OSM_4358039269",
+      "lat": -33.0474163,
+      "lon": -71.4087323,
+      "name": "OSM 4358039269",
+      "osm_id": 4358039269
+    },
+    {
+      "along_route_m": 3001.5,
+      "distance_to_route_m": 3.1,
+      "id": "OSM_4524950428",
+      "lat": -33.0463724,
+      "lon": -71.4098307,
+      "name": "Paradero 15",
+      "osm_id": 4524950428
+    },
+    {
+      "along_route_m": 3305.0,
+      "distance_to_route_m": 10.4,
+      "id": "OSM_5567963297",
+      "lat": -33.0460587,
+      "lon": -71.413068,
+      "name": "Paradero 16",
+      "osm_id": 5567963297
+    },
+    {
+      "along_route_m": 3366.7,
+      "distance_to_route_m": 7.6,
+      "id": "OSM_5683123939",
+      "lat": -33.0457024,
+      "lon": -71.4136118,
+      "name": "Paradero 16",
+      "osm_id": 5683123939
+    },
+    {
+      "along_route_m": 3803.4,
+      "distance_to_route_m": 7.8,
+      "id": "OSM_4428307299",
+      "lat": -33.0445055,
+      "lon": -71.4180462,
+      "name": "Paradero 17",
+      "osm_id": 4428307299
+    },
+    {
+      "along_route_m": 4029.8,
+      "distance_to_route_m": 23.0,
+      "id": "OSM_4524950435",
+      "lat": -33.044019,
+      "lon": -71.4204207,
+      "name": "OSM 4524950435",
+      "osm_id": 4524950435
+    },
+    {
+      "along_route_m": 4076.5,
+      "distance_to_route_m": 7.4,
+      "id": "OSM_4524950434",
+      "lat": -33.0436081,
+      "lon": -71.4207688,
+      "name": "OSM 4524950434",
+      "osm_id": 4524950434
+    },
+    {
+      "along_route_m": 4690.4,
+      "distance_to_route_m": 7.2,
+      "id": "OSM_4524950429",
+      "lat": -33.042125,
+      "lon": -71.4270877,
+      "name": "Paradero 18",
+      "osm_id": 4524950429
+    },
+    {
+      "along_route_m": 4754.8,
+      "distance_to_route_m": 8.5,
+      "id": "OSM_6786856366",
+      "lat": -33.0423342,
+      "lon": -71.4277545,
+      "name": "Paradero 18",
+      "osm_id": 6786856366
+    },
+    {
+      "along_route_m": 5064.0,
+      "distance_to_route_m": 6.8,
+      "id": "OSM_6808369290",
+      "lat": -33.0425816,
+      "lon": -71.4310133,
+      "name": "OSM 6808369290",
+      "osm_id": 6808369290
+    },
+    {
+      "along_route_m": 5127.9,
+      "distance_to_route_m": 6.2,
+      "id": "OSM_10234578656",
+      "lat": -33.0426367,
+      "lon": -71.4317094,
+      "name": "OSM 10234578656",
+      "osm_id": 10234578656
+    },
+    {
+      "along_route_m": 5382.0,
+      "distance_to_route_m": 6.3,
+      "id": "OSM_8423916915",
+      "lat": -33.0433163,
+      "lon": -71.4343123,
+      "name": "OSM 8423916915",
+      "osm_id": 8423916915
+    },
+    {
+      "along_route_m": 5437.1,
+      "distance_to_route_m": 7.6,
+      "id": "OSM_8423916916",
+      "lat": -33.0435991,
+      "lon": -71.434805,
+      "name": "OSM 8423916916",
+      "osm_id": 8423916916
+    },
+    {
+      "along_route_m": 5609.6,
+      "distance_to_route_m": 4.4,
+      "id": "OSM_10234578657",
+      "lat": -33.0442291,
+      "lon": -71.4365018,
+      "name": "Paradero 22",
+      "osm_id": 10234578657
+    },
+    {
+      "along_route_m": 6028.7,
+      "distance_to_route_m": 6.2,
+      "id": "OSM_3884186825",
+      "lat": -33.0460558,
+      "lon": -71.4404341,
+      "name": "Paradero 23",
+      "osm_id": 3884186825
+    },
+    {
+      "along_route_m": 6111.9,
+      "distance_to_route_m": 104.5,
+      "id": "OSM_11970877527",
+      "lat": -33.0454624,
+      "lon": -71.4418008,
+      "name": "OSM 11970877527",
+      "osm_id": 11970877527
+    },
+    {
+      "along_route_m": 6301.6,
+      "distance_to_route_m": 118.7,
+      "id": "OSM_4050827604",
+      "lat": -33.0482767,
+      "lon": -71.4415409,
+      "name": "Paradero 25 1/2",
+      "osm_id": 4050827604
+    },
+    {
+      "along_route_m": 6791.2,
+      "distance_to_route_m": 105.9,
+      "id": "OSM_4197967224",
+      "lat": -33.0457314,
+      "lon": -71.4433774,
+      "name": "OSM 4197967224",
+      "osm_id": 4197967224
+    },
+    {
+      "along_route_m": 6848.5,
+      "distance_to_route_m": 1.6,
+      "id": "OSM_269811143",
+      "lat": -33.0455917,
+      "lon": -71.4449618,
+      "name": "OSM 269811143",
+      "osm_id": 269811143
+    },
+    {
+      "along_route_m": 7110.7,
+      "distance_to_route_m": 82.3,
+      "id": "OSM_4028010731",
+      "lat": -33.0476606,
+      "lon": -71.4462749,
+      "name": "Paradero 26",
+      "osm_id": 4028010731
+    },
+    {
+      "along_route_m": 7163.8,
+      "distance_to_route_m": 1.0,
+      "id": "OSM_4868462256",
+      "lat": -33.0481342,
+      "lon": -71.445568,
+      "name": "OSM 4868462256",
+      "osm_id": 4868462256
+    },
+    {
+      "along_route_m": 8852.7,
+      "distance_to_route_m": 39.6,
+      "id": "OSM_13912659338",
+      "lat": -33.0522022,
+      "lon": -71.4333549,
+      "name": "OSM 13912659338",
+      "osm_id": 13912659338
+    },
+    {
+      "along_route_m": 10503.6,
+      "distance_to_route_m": 5.4,
+      "id": "OSM_7629961204",
+      "lat": -33.0567094,
+      "lon": -71.4225818,
+      "name": "OSM 7629961204",
+      "osm_id": 7629961204
+    },
+    {
+      "along_route_m": 11017.5,
+      "distance_to_route_m": 4.2,
+      "id": "OSM_7629961212",
+      "lat": -33.057737,
+      "lon": -71.4172717,
+      "name": "OSM 7629961212",
+      "osm_id": 7629961212
+    },
+    {
+      "along_route_m": 11342.7,
+      "distance_to_route_m": 71.0,
+      "id": "OSM_3241354639",
+      "lat": -33.0578885,
+      "lon": -71.4136331,
+      "name": "Fuente Clara Poniente",
+      "osm_id": 3241354639
+    },
+    {
+      "along_route_m": 11585.2,
+      "distance_to_route_m": 5.8,
+      "id": "OSM_7629961215",
+      "lat": -33.0591474,
+      "lon": -71.4114708,
+      "name": "OSM 7629961215",
+      "osm_id": 7629961215
+    },
+    {
+      "along_route_m": 12146.7,
+      "distance_to_route_m": 5.1,
+      "id": "OSM_7512391484",
+      "lat": -33.0568544,
+      "lon": -71.406333,
+      "name": "OSM 7512391484",
+      "osm_id": 7512391484
+    },
+    {
+      "along_route_m": 12266.0,
+      "distance_to_route_m": 4.2,
+      "id": "OSM_7512397485",
+      "lat": -33.057077,
+      "lon": -71.4050818,
+      "name": "OSM 7512397485",
+      "osm_id": 7512397485
+    },
+    {
+      "along_route_m": 12683.5,
+      "distance_to_route_m": 4.0,
+      "id": "OSM_7512397487",
+      "lat": -33.0581729,
+      "lon": -71.4010557,
+      "name": "OSM 7512397487",
+      "osm_id": 7512397487
+    },
+    {
+      "along_route_m": 12965.6,
+      "distance_to_route_m": 5.3,
+      "id": "OSM_7512397493",
+      "lat": -33.058324,
+      "lon": -71.3980403,
+      "name": "OSM 7512397493",
+      "osm_id": 7512397493
+    },
+    {
+      "along_route_m": 13065.3,
+      "distance_to_route_m": 6.5,
+      "id": "OSM_7512397495",
+      "lat": -33.0583392,
+      "lon": -71.3969708,
+      "name": "OSM 7512397495",
+      "osm_id": 7512397495
+    },
+    {
+      "along_route_m": 13214.1,
+      "distance_to_route_m": 6.6,
+      "id": "OSM_7512397514",
+      "lat": -33.0584786,
+      "lon": -71.3953815,
+      "name": "OSM 7512397514",
+      "osm_id": 7512397514
+    },
+    {
+      "along_route_m": 13273.5,
+      "distance_to_route_m": 5.6,
+      "id": "OSM_7607123831",
+      "lat": -33.0583066,
+      "lon": -71.3947579,
+      "name": "OSM 7607123831",
+      "osm_id": 7607123831
+    },
+    {
+      "along_route_m": 13413.2,
+      "distance_to_route_m": 4.3,
+      "id": "OSM_7607123841",
+      "lat": -33.0581021,
+      "lon": -71.39328,
+      "name": "OSM 7607123841",
+      "osm_id": 7607123841
+    },
+    {
+      "along_route_m": 13763.0,
+      "distance_to_route_m": 17.1,
+      "id": "OSM_7607123854",
+      "lat": -33.0574883,
+      "lon": -71.3896188,
+      "name": "OSM 7607123854",
+      "osm_id": 7607123854
+    },
+    {
+      "along_route_m": 14160.4,
+      "distance_to_route_m": 17.3,
+      "id": "OSM_4548970347",
+      "lat": -33.0591677,
+      "lon": -71.3863816,
+      "name": "OSM 4548970347",
+      "osm_id": 4548970347
+    },
+    {
+      "along_route_m": 14206.6,
+      "distance_to_route_m": 96.9,
+      "id": "OSM_7078921695",
+      "lat": -33.0602758,
+      "lon": -71.3862406,
+      "name": "OSM 7078921695",
+      "osm_id": 7078921695
+    },
+    {
+      "along_route_m": 14255.6,
+      "distance_to_route_m": 52.3,
+      "id": "OSM_4548970346",
+      "lat": -33.0595393,
+      "lon": -71.385077,
+      "name": "OSM 4548970346",
+      "osm_id": 4548970346
+    },
+    {
+      "along_route_m": 14297.7,
+      "distance_to_route_m": 5.4,
+      "id": "OSM_7078921696",
+      "lat": -33.0589597,
+      "lon": -71.3853917,
+      "name": "OSM 7078921696",
+      "osm_id": 7078921696
+    },
+    {
+      "along_route_m": 14467.5,
+      "distance_to_route_m": 4.5,
+      "id": "OSM_7078921698",
+      "lat": -33.0576277,
+      "lon": -71.3844877,
+      "name": "OSM 7078921698",
+      "osm_id": 7078921698
+    },
+    {
+      "along_route_m": 14757.0,
+      "distance_to_route_m": 3.6,
+      "id": "OSM_7636867022",
+      "lat": -33.0553696,
+      "lon": -71.3829173,
+      "name": "OSM 7636867022",
+      "osm_id": 7636867022
+    },
+    {
+      "along_route_m": 15242.2,
+      "distance_to_route_m": 5.0,
+      "id": "OSM_7154981827",
+      "lat": -33.056085,
+      "lon": -71.3782945,
+      "name": "OSM 7154981827",
+      "osm_id": 7154981827
+    },
+    {
+      "along_route_m": 15340.3,
+      "distance_to_route_m": 108.7,
+      "id": "OSM_3241354641",
+      "lat": -33.0572026,
+      "lon": -71.3783268,
+      "name": "San Enrique 1040",
+      "osm_id": 3241354641
+    },
+    {
+      "along_route_m": 15424.7,
+      "distance_to_route_m": 92.3,
+      "id": "OSM_5198614085",
+      "lat": -33.0573001,
+      "lon": -71.3764814,
+      "name": "OSM 5198614085",
+      "osm_id": 5198614085
+    },
+    {
+      "along_route_m": 15737.5,
+      "distance_to_route_m": 14.7,
+      "id": "OSM_4211431547",
+      "lat": -33.0562828,
+      "lon": -71.3733377,
+      "name": "OSM 4211431547",
+      "osm_id": 4211431547
+    },
+    {
+      "along_route_m": 17804.0,
+      "distance_to_route_m": 4.5,
+      "id": "OSM_12051944441",
+      "lat": -33.0669689,
+      "lon": -71.3641781,
+      "name": "OSM 12051944441",
+      "osm_id": 12051944441
+    }
+  ]
+}
