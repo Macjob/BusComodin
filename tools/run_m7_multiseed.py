@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import argparse
 import json
 import math
 import statistics
@@ -25,7 +26,11 @@ SEEDS = [11, 23, 42, 57, 71, 89, 101, 137, 173, 211, 257, 307, 359, 401, 449, 50
 
 
 def main() -> int:
-    scenario = load_scenario("configs/scenario-villa-alemana-real-am-v1.json")
+    parser = argparse.ArgumentParser(description="Run M7 multi-seed comparison")
+    parser.add_argument("--scenario", default="configs/scenario-villa-alemana-real-am-v1.json")
+    parser.add_argument("--output-dir", default="outputs/m7-multiseed")
+    args = parser.parse_args()
+    scenario = load_scenario(args.scenario)
     rows = []
     for seed in SEEDS:
         for name, runner in POLICIES.items():
@@ -59,7 +64,7 @@ def main() -> int:
     for item in summary:
         item["wait_improvement_vs_baseline_pct"] = round((baseline - item["mean_wait_minutes"]) / baseline * 100, 2)
 
-    output = Path("outputs/m7-multiseed")
+    output = Path(args.output_dir)
     output.mkdir(parents=True, exist_ok=True)
     (output / "runs.json").write_text(json.dumps(rows, indent=2, sort_keys=True), encoding="utf-8")
     (output / "summary.json").write_text(json.dumps(summary, indent=2, sort_keys=True), encoding="utf-8")
