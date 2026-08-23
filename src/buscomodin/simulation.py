@@ -7,6 +7,7 @@ from .demand import generate_demand
 from .dtpm import choose_short_service_end, load_dtpm_policy
 from .metrics import summarize_metrics
 from .models import Passenger, Scenario, Vehicle
+from .waitaware import load_wait_aware_policy
 
 
 @dataclass(frozen=True)
@@ -47,6 +48,14 @@ def run_dtpm_inspired(
     )
 
 
+def run_wait_aware(
+    scenario: Scenario, seed: int, reinforcement_buses: int = 3
+) -> SimulationResult:
+    return _run_simulation(
+        scenario, seed, policy="wait-aware", reinforcement_buses=reinforcement_buses
+    )
+
+
 def _run_simulation(
     scenario: Scenario, seed: int, policy: str, reinforcement_buses: int
 ) -> SimulationResult:
@@ -65,6 +74,7 @@ def _run_simulation(
     stop_graph = _build_stop_graph(scenario)
     reinforcements = _build_reinforcement_pool(scenario, reinforcement_buses)
     dtpm_config = load_dtpm_policy() if policy == "dtpm-inspired" else None
+    wait_config = load_wait_aware_policy() if policy == "wait-aware" else None
     short_service_assignments = 0
 
     for line in scenario.lines:
@@ -85,16 +95,21 @@ def _run_simulation(
         for passenger in arrivals_by_minute.get(minute, []):
             queues[passenger.origin].append(passenger)
 
-        if minute < scenario.duration_minutes and policy in {"queue-first", "dtpm-inspired"}:
+        if minute < scenario.duration_minutes and policy in {"queue-first", "dtpm-inspired", "wait-aware"}:
             for reinforcement in reinforcements:
                 if not reinforcement.available:
                     continue
                 if policy == "queue-first":
                     target = _largest_service_queue(scenario, queues, minute)
-                else:
+                elif policy == "dtpm-inspired":
                     assert dtpm_config is not None
                     target = _dtpm_target(
                         scenario, queues, minute, regular_last_arrival, dtpm_config
+                    )
+                else:
+                    assert wait_config is not None
+                    target = _wait_aware_target(
+                        scenario, queues, minute, wait_config
                     )
                 if target is None:
                     break
@@ -207,6 +222,8 @@ def _run_simulation(
     if dtpm_config is not None:
         metadata["policy_version"] = dtpm_config.version
         metadata["short_service_assignments"] = short_service_assignments
+    if wait_config is not None:
+        metadata["policy_version"] = wait_config.version
     return SimulationResult(metadata=metadata, metrics=metrics)
 
 
@@ -268,6 +285,37 @@ def _dtpm_target(
     if not candidates:
         return None
     return max(candidates, key=lambda item: (item[0], item[1], -item[2]))
+
+
+def _wait_aware_target(
+    scenario: Scenario,
+    queues: dict[str, list[Passenger]],
+    minute: int,
+    config: object,
+) -> tuple[int, str, int] | None:
+    candidates: list[tuple[float, str, int]] = []
+    for line in scenario.lines:
+        for stop_index, stop in enumerate(line.stops[:-1]):
+            eligible = [
+                passenger
+                for passenger in queues[stop]
+                if passenger.line_id == line.id and passenger.arrival_minute <= minute
+            ]
+            if len(eligible) < config.minimum_queue:
+                continue
+            wait_burden = sum(minute - passenger.arrival_minute for passenger in eligible)
+            capacity_risk = max(0, len(eligible) - scenario.bus_capacity)
+            score = (
+                wait_burden * config.wait_burden_weight
+                + capacity_risk * config.capacity_risk_weight
+            )
+            candidates.append((score, line.id, stop_index))
+    if not candidates:
+        return None
+    score, line_id, stop_index = max(
+        candidates, key=lambda item: (item[0], item[1], -item[2])
+    )
+    return int(round(score)), line_id, stop_index
 
 
 def _build_stop_graph(scenario: Scenario) -> dict[str, set[str]]:
