@@ -66,7 +66,25 @@ La primera prueba real se mantendrá intencionalmente a escala comunal. Los prob
 
 ## Estado
 
-🚧 Etapa inicial: formalización del modelo y construcción del escenario sintético.
+✅ M0: baseline sintético reproducible completado. El siguiente milestone (M1) no forma parte de este PR.
+
+## Ejecutar M0 localmente
+
+Requiere `uv`. El proyecto declara Python 3.11+ y `uv` puede provisionarlo si no está instalado globalmente.
+
+```bash
+uv python install 3.11
+uv venv --python 3.11
+uv pip install --python .venv/Scripts/python.exe -e ".[dev]"
+.venv/Scripts/python.exe -m pytest
+.venv/Scripts/python.exe -m buscomodin simulate baseline --seed 42
+```
+
+En Linux/macOS, reemplaza `.venv/Scripts/python.exe` por `.venv/bin/python`.
+
+La CLI escribe resultados machine-readable en `outputs/` (JSON y CSV) y además imprime el resumen por stdout. La misma combinación de escenario versionado y semilla debe producir resultados equivalentes.
+
+El escenario inicial está definido en `configs/scenario-v1.json`; no se requieren SUMO, datos reales ni servicios externos para M0. Las decisiones del motor sintético están documentadas en `docs/decisions/0001-m0-synthetic-engine.md`.
 
 ## Licencia
 

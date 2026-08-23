@@ -1,0 +1,24 @@
+{
+  "version": "synthetic-v1",
+  "duration_minutes": 120,
+  "travel_time_minutes": 3,
+  "bus_capacity": 35,
+  "hubs": ["S08", "S16"],
+  "stops": [
+    "S01", "S02", "S03", "S04", "S05", "S06", "S07", "S08",
+    "S09", "S10", "S11", "S12", "S13", "S14", "S15", "S16",
+    "S17", "S18", "S19", "S20", "S21", "S22", "S23", "S24"
+  ],
+  "lines": [
+    {"id": "L1", "headway_minutes": 12, "stops": ["S01", "S02", "S03", "S04", "S05", "S06", "S07", "S08", "S09", "S10", "S11", "S12"]},
+    {"id": "L2", "headway_minutes": 10, "stops": ["S06", "S07", "S08", "S13", "S14", "S15", "S16", "S17", "S18", "S19"]},
+    {"id": "L3", "headway_minutes": 15, "stops": ["S10", "S11", "S12", "S15", "S16", "S20", "S21", "S22", "S23", "S24"]}
+  ],
+  "demand": {
+    "base_rate_per_stop_minute": 0.18,
+    "peak_start_minute": 35,
+    "peak_end_minute": 80,
+    "peak_multiplier": 2.8,
+    "hub_origin_multiplier": 1.25
+  }
+}
