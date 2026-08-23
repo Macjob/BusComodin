@@ -1,0 +1,37 @@
+{
+  "version": "villa-alemana-simplified-v1",
+  "duration_minutes": 120,
+  "travel_time_minutes": 3,
+  "bus_capacity": 35,
+  "hubs": ["M_VILLA_ALEMANA", "M_PENABLANCA"],
+  "stops": [
+    "VA01", "VA02", "M_LAS_AMERICAS", "VA03", "M_LA_CONCEPCION",
+    "VA04", "M_VILLA_ALEMANA", "VA05", "M_SARGENTO_ALDEA", "VA06",
+    "M_PENABLANCA", "VA07", "VA08", "VA09", "VA10", "VA11",
+    "VA12", "VA13", "VA14", "VA15"
+  ],
+  "lines": [
+    {
+      "id": "LVA1",
+      "headway_minutes": 12,
+      "stops": ["VA01", "VA02", "M_LAS_AMERICAS", "VA03", "M_LA_CONCEPCION", "VA04", "M_VILLA_ALEMANA", "VA05", "M_SARGENTO_ALDEA", "VA06", "M_PENABLANCA"]
+    },
+    {
+      "id": "LVA2",
+      "headway_minutes": 10,
+      "stops": ["VA07", "VA08", "M_LAS_AMERICAS", "VA09", "M_VILLA_ALEMANA", "VA10", "M_PENABLANCA", "VA11"]
+    },
+    {
+      "id": "LVA3",
+      "headway_minutes": 15,
+      "stops": ["VA12", "VA13", "M_LA_CONCEPCION", "VA14", "M_SARGENTO_ALDEA", "VA15", "M_PENABLANCA"]
+    }
+  ],
+  "demand": {
+    "base_rate_per_stop_minute": 0.18,
+    "peak_start_minute": 35,
+    "peak_end_minute": 80,
+    "peak_multiplier": 2.8,
+    "hub_origin_multiplier": 1.25
+  }
+}
