@@ -8,6 +8,7 @@ class Line:
     id: str
     headway_minutes: int
     stops: tuple[str, ...]
+    segment_travel_minutes: tuple[int, ...] | None = None
 
 
 @dataclass(frozen=True)

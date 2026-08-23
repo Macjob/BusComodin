@@ -1,0 +1,73 @@
+{
+  "commercial_speed_kmh": 30.0,
+  "commercial_speed_source": "SECTRA PMTP Gran Valparaiso: average bus speed ~30 km/h in punta manana",
+  "demand_base_rate_per_stop_minute": 0.08607595,
+  "demand_preservation": "Base stop arrival rate scaled by old/new unique-stop ratio to isolate timing/topology-density change while keeping expected total benchmark demand approximately constant.",
+  "limitations": [
+    "OSM stops are secondary map data, not an official UN11 stop list.",
+    "Commercial speed is system-level historical evidence, not route-specific observed speed.",
+    "SUMO road-network routing and intersection delays are not yet materialized."
+  ],
+  "method": "Sample OSM-matched stops at approximately one commercial-speed minute (~500 m) along each official DTPR shape; derive integer segment times from along-shape distance.",
+  "new_unique_stops": 79,
+  "old_unique_stops": 136,
+  "parent_scenario": "villa-alemana-un11-2025-calibrated-v1",
+  "routes": {
+    "C01_I": {
+      "matched_stops_before": 38,
+      "modeled_runtime_minutes": 16,
+      "projected_length_km": 8.359,
+      "sampled_stops": 13
+    },
+    "C01_R": {
+      "matched_stops_before": 33,
+      "modeled_runtime_minutes": 15,
+      "projected_length_km": 7.24,
+      "sampled_stops": 12
+    },
+    "C02_I": {
+      "matched_stops_before": 51,
+      "modeled_runtime_minutes": 33,
+      "projected_length_km": 16.622,
+      "sampled_stops": 20
+    },
+    "C02_R": {
+      "matched_stops_before": 49,
+      "modeled_runtime_minutes": 33,
+      "projected_length_km": 16.872,
+      "sampled_stops": 19
+    },
+    "C03Y_I": {
+      "matched_stops_before": 13,
+      "modeled_runtime_minutes": 14,
+      "projected_length_km": 6.621,
+      "sampled_stops": 7
+    },
+    "C03_I": {
+      "matched_stops_before": 12,
+      "modeled_runtime_minutes": 11,
+      "projected_length_km": 5.026,
+      "sampled_stops": 6
+    },
+    "C03_R": {
+      "matched_stops_before": 16,
+      "modeled_runtime_minutes": 9,
+      "projected_length_km": 5.137,
+      "sampled_stops": 7
+    },
+    "C04_I": {
+      "matched_stops_before": 47,
+      "modeled_runtime_minutes": 33,
+      "projected_length_km": 17.446,
+      "sampled_stops": 21
+    },
+    "C04_R": {
+      "matched_stops_before": 51,
+      "modeled_runtime_minutes": 33,
+      "projected_length_km": 17.466,
+      "sampled_stops": 19
+    }
+  },
+  "scenario_version": "villa-alemana-un11-2025-spatial-v1",
+  "timing_status": "spatial-provisional-pending-SUMO"
+}

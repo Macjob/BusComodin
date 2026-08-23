@@ -15,6 +15,9 @@ def test_metrics_cover_m0_outputs() -> None:
         boarded_passengers=4,
     )
     assert metrics["mean_wait_minutes"] == 4.0
+    assert metrics["unserved_passengers"] == 1
+    assert metrics["service_rate_pct"] == 80.0
+    assert metrics["mean_censored_wait_minutes"] == 4.0
     assert metrics["passengers_left_behind"] == 2
     assert metrics["mean_load_factor"] == 0.5
     assert metrics["mean_observed_headway_minutes"] == 12.0

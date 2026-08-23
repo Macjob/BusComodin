@@ -41,9 +41,11 @@ def main() -> int:
     for name in POLICIES:
         subset = [row for row in rows if row["policy"] == name]
         waits = [float(row["mean_wait_minutes"]) for row in subset]
+        censored_waits = [float(row["mean_censored_wait_minutes"]) for row in subset]
         p95s = [float(row["p95_wait_minutes"]) for row in subset]
         left = [float(row["passengers_left_behind"]) for row in subset]
         boarded = [float(row["boarded_passengers"]) for row in subset]
+        service_rates = [float(row["service_rate_pct"]) for row in subset]
         mean = statistics.mean(waits)
         sd = statistics.stdev(waits) if len(waits) > 1 else 0.0
         half = 1.96 * sd / math.sqrt(len(waits))
@@ -52,6 +54,8 @@ def main() -> int:
                 "policy": name,
                 "runs": len(subset),
                 "mean_wait_minutes": round(mean, 4),
+                "mean_censored_wait_minutes": round(statistics.mean(censored_waits), 4),
+                "mean_service_rate_pct": round(statistics.mean(service_rates), 4),
                 "ci95_low": round(mean - half, 4),
                 "ci95_high": round(mean + half, 4),
                 "mean_p95_wait_minutes": round(statistics.mean(p95s), 4),

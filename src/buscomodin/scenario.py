@@ -24,6 +24,11 @@ def load_scenario(path: str | Path | None = None) -> Scenario:
                 id=line["id"],
                 headway_minutes=int(line["headway_minutes"]),
                 stops=tuple(line["stops"]),
+                segment_travel_minutes=(
+                    tuple(int(value) for value in line["segment_travel_minutes"])
+                    if "segment_travel_minutes" in line
+                    else None
+                ),
             )
             for line in raw["lines"]
         ),
