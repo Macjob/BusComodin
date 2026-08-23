@@ -1,4 +1,4 @@
-# 🚌 BusComodin
+# BusComodin
 
 **Simulación abierta de una flota municipal de buses de refuerzo asignados dinámicamente a servicios predefinidos según demanda y vulnerabilidad de conectividad.**
 
