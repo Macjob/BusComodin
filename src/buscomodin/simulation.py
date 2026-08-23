@@ -18,17 +18,33 @@ class SimulationResult:
 
 
 def run_baseline(scenario: Scenario, seed: int) -> SimulationResult:
+    return _run_simulation(scenario, seed, policy="baseline", reinforcement_buses=0)
+
+
+def run_queue_first(
+    scenario: Scenario, seed: int, reinforcement_buses: int = 3
+) -> SimulationResult:
+    return _run_simulation(
+        scenario, seed, policy="queue-first", reinforcement_buses=reinforcement_buses
+    )
+
+
+def _run_simulation(
+    scenario: Scenario, seed: int, policy: str, reinforcement_buses: int
+) -> SimulationResult:
     passengers = generate_demand(scenario, seed)
     arrivals_by_minute: dict[int, list[Passenger]] = defaultdict(list)
     for passenger in passengers:
         arrivals_by_minute[passenger.arrival_minute].append(passenger)
 
     queues: dict[str, list[Passenger]] = {stop: [] for stop in scenario.stops}
-    events: dict[int, list[tuple[Vehicle, int]]] = defaultdict(list)
+    events: dict[int, list[tuple[Vehicle, int, bool]]] = defaultdict(list)
     arrivals_history: dict[tuple[str, str], list[int]] = defaultdict(list)
     load_factors: list[float] = []
     wait_times: list[int] = []
     line_by_id = {line.id: line for line in scenario.lines}
+    available_reinforcements = reinforcement_buses
+    dispatched_reinforcements = 0
 
     for line in scenario.lines:
         departure = 0
@@ -39,7 +55,7 @@ def run_baseline(scenario: Scenario, seed: int) -> SimulationResult:
                 line_id=line.id,
                 capacity=scenario.bus_capacity,
             )
-            events[departure].append((vehicle, 0))
+            events[departure].append((vehicle, 0, False))
             departure += line.headway_minutes
             vehicle_number += 1
 
@@ -51,7 +67,20 @@ def run_baseline(scenario: Scenario, seed: int) -> SimulationResult:
         for passenger in arrivals_by_minute.get(minute, []):
             queues[passenger.origin].append(passenger)
 
-        for vehicle, stop_index in list(events.get(minute, [])):
+        if policy == "queue-first" and available_reinforcements > 0:
+            target = _largest_service_queue(scenario, queues, minute)
+            if target is not None and target[0] > 0:
+                _, line_id, stop_index = target
+                vehicle = Vehicle(
+                    id=f"R-{dispatched_reinforcements}",
+                    line_id=line_id,
+                    capacity=scenario.bus_capacity,
+                )
+                events[minute].append((vehicle, stop_index, True))
+                available_reinforcements -= 1
+                dispatched_reinforcements += 1
+
+        for vehicle, stop_index, is_reinforcement in list(events.get(minute, [])):
             line = line_by_id[vehicle.line_id]
             stop = line.stops[stop_index]
             arrivals_history[(line.id, stop)].append(minute)
@@ -89,7 +118,7 @@ def run_baseline(scenario: Scenario, seed: int) -> SimulationResult:
 
             if stop_index + 1 < len(line.stops):
                 events[minute + scenario.travel_time_minutes].append(
-                    (vehicle, stop_index + 1)
+                    (vehicle, stop_index + 1, is_reinforcement)
                 )
 
     headways: list[int] = []
@@ -111,13 +140,30 @@ def run_baseline(scenario: Scenario, seed: int) -> SimulationResult:
     )
     return SimulationResult(
         metadata={
-            "policy": "baseline",
+            "policy": policy,
             "seed": seed,
             "scenario_version": scenario.version,
             "duration_minutes": scenario.duration_minutes,
             "bus_capacity": scenario.bus_capacity,
             "regular_lines": len(scenario.lines),
-            "reinforcement_buses": 0,
+            "reinforcement_buses": reinforcement_buses,
+            "reinforcements_dispatched": dispatched_reinforcements,
         },
         metrics=metrics,
     )
+
+
+def _largest_service_queue(
+    scenario: Scenario, queues: dict[str, list[Passenger]], minute: int
+) -> tuple[int, str, int] | None:
+    candidates: list[tuple[int, str, int]] = []
+    for line in scenario.lines:
+        for stop_index, stop in enumerate(line.stops[:-1]):
+            queue_size = sum(
+                passenger.line_id == line.id and passenger.arrival_minute <= minute
+                for passenger in queues[stop]
+            )
+            candidates.append((queue_size, line.id, stop_index))
+    if not candidates:
+        return None
+    return max(candidates, key=lambda item: (item[0], item[1], -item[2]))
