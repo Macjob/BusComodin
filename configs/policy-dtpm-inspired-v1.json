@@ -1,0 +1,18 @@
+{
+  "version": "dtpm-inspired-v1",
+  "headway": {
+    "absolute_extra_minutes": 15,
+    "multiple_of_scheduled": 2.0
+  },
+  "crowding": {
+    "capacity_multiplier": 1.2
+  },
+  "short_services": [
+    {
+      "id": "L2-short-S08-S16",
+      "line_id": "L2",
+      "start_stop": "S08",
+      "end_stop": "S16"
+    }
+  ]
+}

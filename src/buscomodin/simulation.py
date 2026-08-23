@@ -4,6 +4,7 @@ from collections import defaultdict, deque
 from dataclasses import asdict, dataclass
 
 from .demand import generate_demand
+from .dtpm import choose_short_service_end, load_dtpm_policy
 from .metrics import summarize_metrics
 from .models import Passenger, Scenario, Vehicle
 
@@ -38,6 +39,14 @@ def run_queue_first(
     )
 
 
+def run_dtpm_inspired(
+    scenario: Scenario, seed: int, reinforcement_buses: int = 3
+) -> SimulationResult:
+    return _run_simulation(
+        scenario, seed, policy="dtpm-inspired", reinforcement_buses=reinforcement_buses
+    )
+
+
 def _run_simulation(
     scenario: Scenario, seed: int, policy: str, reinforcement_buses: int
 ) -> SimulationResult:
@@ -47,13 +56,16 @@ def _run_simulation(
         arrivals_by_minute[passenger.arrival_minute].append(passenger)
 
     queues: dict[str, list[Passenger]] = {stop: [] for stop in scenario.stops}
-    events: dict[int, list[tuple[Vehicle, int, str | None]]] = defaultdict(list)
+    events: dict[int, list[tuple[Vehicle, int, str | None, int]]] = defaultdict(list)
     arrivals_history: dict[tuple[str, str], list[int]] = defaultdict(list)
+    regular_last_arrival: dict[tuple[str, str], int] = {}
     load_factors: list[float] = []
     wait_times: list[int] = []
     line_by_id = {line.id: line for line in scenario.lines}
     stop_graph = _build_stop_graph(scenario)
     reinforcements = _build_reinforcement_pool(scenario, reinforcement_buses)
+    dtpm_config = load_dtpm_policy() if policy == "dtpm-inspired" else None
+    short_service_assignments = 0
 
     for line in scenario.lines:
         departure = 0
@@ -64,49 +76,63 @@ def _run_simulation(
                 line_id=line.id,
                 capacity=scenario.bus_capacity,
             )
-            events[departure].append((vehicle, 0, None))
+            events[departure].append((vehicle, 0, None, len(line.stops) - 1))
             departure += line.headway_minutes
             vehicle_number += 1
 
-    final_event_minute = (
-        scenario.duration_minutes
-        + 2 * len(scenario.stops) * scenario.travel_time_minutes
-    )
+    final_event_minute = scenario.duration_minutes + 2 * len(scenario.stops) * scenario.travel_time_minutes
     for minute in range(final_event_minute + 1):
         for passenger in arrivals_by_minute.get(minute, []):
             queues[passenger.origin].append(passenger)
 
-        if policy == "queue-first" and minute < scenario.duration_minutes:
+        if minute < scenario.duration_minutes and policy in {"queue-first", "dtpm-inspired"}:
             for reinforcement in reinforcements:
                 if not reinforcement.available:
                     continue
-                target = _largest_service_queue(scenario, queues, minute)
-                if target is None or target[0] <= 0:
+                if policy == "queue-first":
+                    target = _largest_service_queue(scenario, queues, minute)
+                else:
+                    assert dtpm_config is not None
+                    target = _dtpm_target(
+                        scenario, queues, minute, regular_last_arrival, dtpm_config
+                    )
+                if target is None:
                     break
                 _, line_id, stop_index = target
-                target_stop = line_by_id[line_id].stops[stop_index]
+                line = line_by_id[line_id]
+                target_stop = line.stops[stop_index]
                 reposition = _reposition_minutes(
                     stop_graph,
                     reinforcement.location,
                     target_stop,
                     scenario.travel_time_minutes,
                 )
+                end_index = len(line.stops) - 1
+                if policy == "dtpm-inspired":
+                    short_end = choose_short_service_end(
+                        scenario, dtpm_config, line_id, stop_index
+                    )
+                    if short_end is not None:
+                        end_index = short_end
+                        short_service_assignments += 1
                 vehicle = Vehicle(
                     id=reinforcement.id,
                     line_id=line_id,
                     capacity=scenario.bus_capacity,
                 )
                 events[minute + reposition].append(
-                    (vehicle, stop_index, reinforcement.id)
+                    (vehicle, stop_index, reinforcement.id, end_index)
                 )
                 reinforcement.available = False
                 reinforcement.assignments += 1
                 reinforcement.reposition_minutes += reposition
 
-        for vehicle, stop_index, reinforcement_id in list(events.get(minute, [])):
+        for vehicle, stop_index, reinforcement_id, end_index in list(events.get(minute, [])):
             line = line_by_id[vehicle.line_id]
             stop = line.stops[stop_index]
             arrivals_history[(line.id, stop)].append(minute)
+            if reinforcement_id is None:
+                regular_last_arrival[(line.id, stop)] = minute
 
             remaining_onboard: list[Passenger] = []
             for passenger in vehicle.passengers:
@@ -121,7 +147,9 @@ def _run_simulation(
             eligible = [
                 passenger
                 for passenger in waiting_here
-                if passenger.line_id == line.id and passenger.arrival_minute <= minute
+                if passenger.line_id == line.id
+                and passenger.arrival_minute <= minute
+                and line.stops.index(passenger.destination) <= end_index
             ]
             to_board = eligible[:available]
             boarded_ids = {passenger.id for passenger in to_board}
@@ -139,9 +167,9 @@ def _run_simulation(
             ]
             load_factors.append(len(vehicle.passengers) / vehicle.capacity)
 
-            if stop_index + 1 < len(line.stops):
+            if stop_index < end_index:
                 events[minute + scenario.travel_time_minutes].append(
-                    (vehicle, stop_index + 1, reinforcement_id)
+                    (vehicle, stop_index + 1, reinforcement_id, end_index)
                 )
             elif reinforcement_id is not None:
                 reinforcement = next(
@@ -152,13 +180,9 @@ def _run_simulation(
 
     headways: list[int] = []
     for arrivals in arrivals_history.values():
-        headways.extend(
-            second - first for first, second in zip(arrivals, arrivals[1:])
-        )
+        headways.extend(second - first for first, second in zip(arrivals, arrivals[1:]))
 
-    boarded_count = sum(
-        passenger.boarded_minute is not None for passenger in passengers
-    )
+    boarded_count = sum(passenger.boarded_minute is not None for passenger in passengers)
     metrics = summarize_metrics(
         wait_times=wait_times,
         left_behind_count=sum(passenger.left_behind for passenger in passengers),
@@ -169,20 +193,21 @@ def _run_simulation(
     )
     total_assignments = sum(item.assignments for item in reinforcements)
     total_reposition_minutes = sum(item.reposition_minutes for item in reinforcements)
-    return SimulationResult(
-        metadata={
-            "policy": policy,
-            "seed": seed,
-            "scenario_version": scenario.version,
-            "duration_minutes": scenario.duration_minutes,
-            "bus_capacity": scenario.bus_capacity,
-            "regular_lines": len(scenario.lines),
-            "reinforcement_buses": reinforcement_buses,
-            "reinforcement_assignments": total_assignments,
-            "reinforcement_reposition_minutes": total_reposition_minutes,
-        },
-        metrics=metrics,
-    )
+    metadata: dict[str, object] = {
+        "policy": policy,
+        "seed": seed,
+        "scenario_version": scenario.version,
+        "duration_minutes": scenario.duration_minutes,
+        "bus_capacity": scenario.bus_capacity,
+        "regular_lines": len(scenario.lines),
+        "reinforcement_buses": reinforcement_buses,
+        "reinforcement_assignments": total_assignments,
+        "reinforcement_reposition_minutes": total_reposition_minutes,
+    }
+    if dtpm_config is not None:
+        metadata["policy_version"] = dtpm_config.version
+        metadata["short_service_assignments"] = short_service_assignments
+    return SimulationResult(metadata=metadata, metrics=metrics)
 
 
 def _build_reinforcement_pool(
@@ -208,6 +233,38 @@ def _largest_service_queue(
                 for passenger in queues[stop]
             )
             candidates.append((queue_size, line.id, stop_index))
+    if not candidates:
+        return None
+    best = max(candidates, key=lambda item: (item[0], item[1], -item[2]))
+    return best if best[0] > 0 else None
+
+
+def _dtpm_target(
+    scenario: Scenario,
+    queues: dict[str, list[Passenger]],
+    minute: int,
+    regular_last_arrival: dict[tuple[str, str], int],
+    config: object,
+) -> tuple[int, str, int] | None:
+    candidates: list[tuple[int, str, int]] = []
+    for line in scenario.lines:
+        threshold = max(
+            line.headway_minutes + config.absolute_extra_minutes,
+            int(line.headway_minutes * config.multiple_of_scheduled),
+        )
+        crowd_threshold = scenario.bus_capacity * config.capacity_multiplier
+        for stop_index, stop in enumerate(line.stops[:-1]):
+            queue_size = sum(
+                passenger.line_id == line.id and passenger.arrival_minute <= minute
+                for passenger in queues[stop]
+            )
+            last_arrival = regular_last_arrival.get((line.id, stop))
+            gap = minute if last_arrival is None else minute - last_arrival
+            headway_trigger = gap > threshold and queue_size > 0
+            crowding_trigger = queue_size > crowd_threshold
+            if headway_trigger or crowding_trigger:
+                severity = max(queue_size, int(gap - threshold) + queue_size)
+                candidates.append((severity, line.id, stop_index))
     if not candidates:
         return None
     return max(candidates, key=lambda item: (item[0], item[1], -item[2]))
