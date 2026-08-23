@@ -27,12 +27,21 @@ def summarize_metrics(
     observed_headways: list[int],
     generated_passengers: int,
     boarded_passengers: int,
+    censored_wait_times: list[int] | None = None,
 ) -> dict[str, float | int]:
+    censored = censored_wait_times if censored_wait_times is not None else wait_times
+    unserved = max(0, generated_passengers - boarded_passengers)
     return {
         "generated_passengers": generated_passengers,
         "boarded_passengers": boarded_passengers,
+        "unserved_passengers": unserved,
+        "service_rate_pct": round(boarded_passengers / generated_passengers * 100, 4)
+        if generated_passengers
+        else 0.0,
         "mean_wait_minutes": round(fmean(wait_times), 4) if wait_times else 0.0,
         "p95_wait_minutes": round(percentile(wait_times, 0.95), 4),
+        "mean_censored_wait_minutes": round(fmean(censored), 4) if censored else 0.0,
+        "p95_censored_wait_minutes": round(percentile(censored, 0.95), 4),
         "passengers_left_behind": left_behind_count,
         "mean_load_factor": round(fmean(load_factors), 4) if load_factors else 0.0,
         "max_load_factor": round(max(load_factors), 4) if load_factors else 0.0,

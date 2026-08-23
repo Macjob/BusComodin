@@ -1,7 +1,8 @@
 from __future__ import annotations
 
-from collections import defaultdict, deque
+from collections import defaultdict
 from dataclasses import asdict, dataclass
+import heapq
 
 from .connectivity import load_connectivity_policy, vulnerability_by_stop
 from .demand import generate_demand
@@ -98,7 +99,7 @@ def _run_simulation(
     for line in scenario.lines:
         departure = 0
         vehicle_number = 0
-        while departure < scenario.duration_minutes:
+        while departure <= scenario.duration_minutes:
             vehicle = Vehicle(
                 id=f"{line.id}-{vehicle_number}",
                 line_id=line.id,
@@ -148,7 +149,6 @@ def _run_simulation(
                     stop_graph,
                     reinforcement.location,
                     target_stop,
-                    scenario.travel_time_minutes,
                 )
                 end_index = len(line.stops) - 1
                 if policy == "dtpm-inspired":
@@ -211,7 +211,7 @@ def _run_simulation(
             load_factors.append(len(vehicle.passengers) / vehicle.capacity)
 
             if stop_index < end_index:
-                events[minute + scenario.travel_time_minutes].append(
+                events[minute + _segment_travel_minutes(scenario, line, stop_index)].append(
                     (vehicle, stop_index + 1, reinforcement_id, end_index)
                 )
             elif reinforcement_id is not None:
@@ -226,6 +226,14 @@ def _run_simulation(
         headways.extend(second - first for first, second in zip(arrivals, arrivals[1:]))
 
     boarded_count = sum(passenger.boarded_minute is not None for passenger in passengers)
+    censored_wait_times = [
+        (
+            passenger.boarded_minute - passenger.arrival_minute
+            if passenger.boarded_minute is not None
+            else final_event_minute - passenger.arrival_minute
+        )
+        for passenger in passengers
+    ]
     metrics = summarize_metrics(
         wait_times=wait_times,
         left_behind_count=sum(passenger.left_behind for passenger in passengers),
@@ -233,6 +241,7 @@ def _run_simulation(
         observed_headways=headways,
         generated_passengers=len(passengers),
         boarded_passengers=boarded_count,
+        censored_wait_times=censored_wait_times,
     )
     total_assignments = sum(item.assignments for item in reinforcements)
     total_reposition_minutes = sum(item.reposition_minutes for item in reinforcements)
@@ -383,29 +392,42 @@ def _connectivity_aware_target(
     return int(round(score)), line_id, stop_index
 
 
-def _build_stop_graph(scenario: Scenario) -> dict[str, set[str]]:
-    graph: dict[str, set[str]] = {stop: set() for stop in scenario.stops}
+def _segment_travel_minutes(scenario: Scenario, line: object, stop_index: int) -> int:
+    segment_times = getattr(line, "segment_travel_minutes", None)
+    if segment_times is None:
+        return scenario.travel_time_minutes
+    return int(segment_times[stop_index])
+
+
+def _build_stop_graph(scenario: Scenario) -> dict[str, dict[str, int]]:
+    graph: dict[str, dict[str, int]] = {stop: {} for stop in scenario.stops}
     for line in scenario.lines:
-        for first, second in zip(line.stops, line.stops[1:]):
-            graph[first].add(second)
-            graph[second].add(first)
+        for index, (first, second) in enumerate(zip(line.stops, line.stops[1:])):
+            weight = _segment_travel_minutes(scenario, line, index)
+            previous = graph[first].get(second)
+            if previous is None or weight < previous:
+                graph[first][second] = weight
+                graph[second][first] = weight
     return graph
 
 
 def _reposition_minutes(
-    graph: dict[str, set[str]], origin: str, destination: str, travel_time_minutes: int
+    graph: dict[str, dict[str, int]], origin: str, destination: str
 ) -> int:
     if origin == destination:
         return 0
-    queue: deque[tuple[str, int]] = deque([(origin, 0)])
-    visited = {origin}
+    queue: list[tuple[int, str]] = [(0, origin)]
+    best = {origin: 0}
     while queue:
-        stop, hops = queue.popleft()
-        for neighbour in sorted(graph[stop]):
-            if neighbour in visited:
+        minutes, stop = heapq.heappop(queue)
+        if stop == destination:
+            return minutes
+        if minutes != best.get(stop):
+            continue
+        for neighbour, weight in sorted(graph[stop].items()):
+            candidate = minutes + weight
+            if candidate >= best.get(neighbour, 10**9):
                 continue
-            if neighbour == destination:
-                return (hops + 1) * travel_time_minutes
-            visited.add(neighbour)
-            queue.append((neighbour, hops + 1))
+            best[neighbour] = candidate
+            heapq.heappush(queue, (candidate, neighbour))
     raise ValueError(f"No reposition path from {origin} to {destination}")

@@ -1,0 +1,49 @@
+{
+  "capacity_status": "estimated-35-until-fleet-capacity-is-materialized",
+  "demand_status": "synthetic-not-calibrated",
+  "frequency_source": "DTPR DSL4654 UN11 Bases, Anexo N°3, documentoId=21963165; laboral 08:00-08:59",
+  "route_count": 9,
+  "route_source": "DTPR DSL4654 UN11 KMZ, documentoId=21963290, published 2024-10-22",
+  "routes": {
+    "C01_I": {
+      "headway_minutes": 15,
+      "matched_stops": 38
+    },
+    "C01_R": {
+      "headway_minutes": 15,
+      "matched_stops": 33
+    },
+    "C02_I": {
+      "headway_minutes": 15,
+      "matched_stops": 51
+    },
+    "C02_R": {
+      "headway_minutes": 15,
+      "matched_stops": 49
+    },
+    "C03Y_I": {
+      "headway_minutes": 60,
+      "matched_stops": 13
+    },
+    "C03_I": {
+      "headway_minutes": 15,
+      "matched_stops": 12
+    },
+    "C03_R": {
+      "headway_minutes": 15,
+      "matched_stops": 16
+    },
+    "C04_I": {
+      "headway_minutes": 30,
+      "matched_stops": 47
+    },
+    "C04_R": {
+      "headway_minutes": 30,
+      "matched_stops": 51
+    }
+  },
+  "scenario_version": "villa-alemana-real-network-am-v1",
+  "stop_source": "OpenStreetMap nodes highway=bus_stop or public_transport=platform, matched <=120 m to official DTPR shapes",
+  "travel_time_status": "modeled-2-min-per-stop-until-SUMO-network-is-materialized",
+  "unique_stops": 136
+}

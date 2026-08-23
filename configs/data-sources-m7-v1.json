@@ -1,0 +1,75 @@
+{
+  "version": "m7-data-sources-v1",
+  "sources": [
+    {
+      "id": "dtpr-elc0004-routes-kmz",
+      "kind": "kmz",
+      "status": "official-reference-2022",
+      "organization": "DTPR / MTT Chile",
+      "published_date": "2022-02-07",
+      "landing_page": "https://apps.dtpr.cl/ConsultaLicitaciones/DetalleLicitacion/3815",
+      "download_url": "https://apps.dtpr.cl/ConsultaLicitaciones/Descargar?documentoId=19145139",
+      "filename": "elc0004-routes.kmz",
+      "target_services": ["120", "122", "125"]
+    },
+    {
+      "id": "dtpr-dsl4654-un11-kmz",
+      "kind": "kmz",
+      "status": "official-current-network-2024",
+      "organization": "DTPR / MTT Chile",
+      "published_date": "2024-10-22",
+      "landing_page": "https://apps.dtpr.cl/ConsultaLicitaciones/DetalleLicitacion/9505",
+      "download_url": "https://apps.dtpr.cl/ConsultaLicitaciones/Descargar?documentoId=21963290",
+      "filename": "un11-services-2024.kmz",
+      "sha256": "80ae9c17994b65f727415e18f3a91487ab0fdc328c54bbfc150b61bff55e3994",
+      "target_services": ["C01", "C02", "C03", "C03Y", "C04"]
+    },
+    {
+      "id": "dtpr-dsl4654-un11-bases",
+      "kind": "pdf",
+      "status": "official-current-operation-2024",
+      "organization": "DTPR / MTT Chile",
+      "published_date": "2024-10-22",
+      "landing_page": "https://apps.dtpr.cl/ConsultaLicitaciones/DetalleLicitacion/9505",
+      "download_url": "https://apps.dtpr.cl/ConsultaLicitaciones/Descargar?documentoId=21963165",
+      "filename": "un11-bases-2024.pdf",
+      "sha256": "82df5d6bb176572f0480f7a13af71658ef6ee6c6fab353f4e1b35d79767a9163",
+      "contains": ["Anexo N°3 Programa de Operación", "frecuencias", "trazados", "flota mínima"]
+    },
+    {
+      "id": "osm-un11-stops-2026-08-23",
+      "kind": "overpass-json",
+      "status": "secondary-current-map",
+      "organization": "OpenStreetMap contributors",
+      "retrieved_date": "2026-08-23",
+      "query": "nodes highway=bus_stop OR public_transport=platform within UN11 route bbox + 0.01 degree buffer",
+      "matching_rule": "<=120 m from official DTPR route shape, deduplicate positions within 35 m along route"
+    },
+    {
+      "id": "gtfs-gran-valparaiso-2016",
+      "kind": "gtfs-zip",
+      "status": "historic-2016-unavailable-404",
+      "organization": "Ministerio de Transportes y Telecomunicaciones / datos.gob.cl",
+      "published_date": "2016-02-01",
+      "landing_page": "http://datos.gob.cl/dataset/gtfs-valpo/resource/ae8d306d-7a47-4c9f-bdf0-d608bc33df40",
+      "download_url": "http://datos.gob.cl/dataset/9e74dc7e-9a58-41a1-8ccf-422b979173a8/resource/ae8d306d-7a47-4c9f-bdf0-d608bc33df40/download/valparaiso1feb16.zip",
+      "filename": "valparaiso1feb16.zip"
+    },
+    {
+      "id": "dtpr-per0002-2025",
+      "kind": "landing-page",
+      "status": "official-2025-tender",
+      "organization": "DTPR / MTT Chile",
+      "published_date": "2025-07-01",
+      "landing_page": "https://dtpr.mtt.gob.cl/consultalicitaciones/webpage/Licitaciones.aspx?id=10464"
+    },
+    {
+      "id": "sectra-eod-gran-valparaiso-2014",
+      "kind": "landing-page",
+      "status": "official-historic-demand",
+      "organization": "SECTRA / MTT Chile",
+      "published_date": "2014",
+      "landing_page": "https://www.sectra.gob.cl/info-territorial/region-de-valparaiso/"
+    }
+  ]
+}

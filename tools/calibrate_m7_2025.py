@@ -1,0 +1,62 @@
+from __future__ import annotations
+
+import json
+from pathlib import Path
+
+
+def main() -> int:
+    repo = Path(__file__).resolve().parents[1]
+    source_path = repo / "configs" / "scenario-villa-alemana-real-am-v1.json"
+    target_path = repo / "configs" / "scenario-villa-alemana-un11-2025-calibrated-v1.json"
+    provenance_path = repo / "data" / "reference" / "m7" / "scenario-villa-alemana-un11-2025-calibrated-v1.provenance.json"
+
+    scenario = json.loads(source_path.read_text(encoding="utf-8"))
+    scenario["version"] = "villa-alemana-un11-2025-calibrated-v1"
+    scenario["travel_time_minutes"] = 1
+    scenario["bus_capacity"] = 35
+    scenario["demand"]["base_rate_per_stop_minute"] = 0.05
+    scenario["demand"]["peak_multiplier"] = 2.0
+    target_path.write_text(json.dumps(scenario, ensure_ascii=False, indent=2, sort_keys=True), encoding="utf-8")
+
+    provenance = {
+        "scenario_version": scenario["version"],
+        "network_period": "UN11 program 2025; historical calibration target, not current August 2026 operation",
+        "network_and_frequency_source": "DTPR DSL4654 UN11, 2024 bases/KMZ, contract effective 2025",
+        "demand_calibration": {
+            "status": "historical-provisional",
+            "effective_peak_rate_per_stop_minute": 0.1,
+            "rationale": [
+                "EOD/PMTP reports 91,372 bus-urban trips in Gran Valparaiso during punta manana",
+                "Origin Villa Alemana: 12,733 bus trips in punta manana; origin Quilpue: 14,329",
+                "Internal Quilpue/Villa Alemana OD bus trips in punta manana total 16,772",
+                "2026 public reporting estimated approximately 3,000-5,000 daily users affected by suspension of C01/C02/C03",
+                "The previous synthetic setting generated about 1,500 passengers/hour for UN11 and visibly over-saturated the network; v1 halves that synthetic intensity pending microdata ingestion"
+            ],
+            "limitations": "Demand is constrained by published aggregates, not assigned from EOD microdata or observed 2025 boardings."
+        },
+        "travel_time_calibration": {
+            "status": "historical-provisional",
+            "minutes_per_matched_stop": 1,
+            "rationale": [
+                "EOD 2014 mean trip times: ~19:12 intra-Villa Alemana, ~20:18 intra-Quilpue, ~30-31 min Villa Alemana<->Quilpue",
+                "The previous 2 min/stop representation made long UN11 shapes unrealistically slow; 1 min/stop is retained as an abstract segment-time proxy until SUMO is materialized"
+            ]
+        },
+        "capacity_calibration": {
+            "status": "unconfirmed-sensitivity-required",
+            "passengers": 35,
+            "rationale": "UN11 official bases confirm minimum fleet of 27 buses but accessible documents reviewed so far do not provide a verified passenger capacity for the awarded vehicles."
+        },
+        "current_2026_status": {
+            "warning": "C01/C02/C03 concession operation ended 2026-01-31 and EFE Valparaiso began temporary replacement services on 2026-02-02. Do not label this scenario as current-2026.",
+            "scenario_role": "historical/calibration benchmark with complete official program documentation"
+        }
+    }
+    provenance_path.write_text(json.dumps(provenance, ensure_ascii=False, indent=2, sort_keys=True), encoding="utf-8")
+    print(target_path)
+    print(provenance_path)
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

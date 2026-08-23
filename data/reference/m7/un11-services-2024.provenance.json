@@ -1,0 +1,21 @@
+{
+  "artifact": "un11-services-2024.geojson",
+  "download_url": "https://apps.dtpr.cl/ConsultaLicitaciones/Descargar?documentoId=21963290",
+  "features": [
+    "C01 IDA",
+    "C01 REGRESO",
+    "C02",
+    "C02 REGRESO",
+    "C03 IDA",
+    "C03 REGRESO",
+    "C03Y IDA",
+    "C03Y REGRESO",
+    "C04 IDA",
+    "C04 REGRESO"
+  ],
+  "landing_page": "https://apps.dtpr.cl/ConsultaLicitaciones/DetalleLicitacion/9505",
+  "organization": "DTPR / MTT Chile",
+  "published_date": "2024-10-22",
+  "source_id": "dtpr-dsl4654-un11-kmz",
+  "source_sha256": "80ae9c17994b65f727415e18f3a91487ab0fdc328c54bbfc150b61bff55e3994"
+}

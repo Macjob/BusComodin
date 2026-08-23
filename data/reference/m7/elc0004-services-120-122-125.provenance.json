@@ -1,0 +1,25 @@
+{
+  "artifact": "elc0004-services-120-122-125.geojson",
+  "download_url": "https://apps.dtpr.cl/ConsultaLicitaciones/Descargar?documentoId=19145139",
+  "features": [
+    "120_I",
+    "120_R",
+    "122_I",
+    "122_R",
+    "125 I",
+    "125 R"
+  ],
+  "landing_page": "https://apps.dtpr.cl/ConsultaLicitaciones/DetalleLicitacion/3815",
+  "organization": "DTPR / MTT Chile",
+  "source_filename": "elc0004-routes.kmz",
+  "source_id": "dtpr-elc0004-routes-kmz",
+  "source_published_date": "2022-02-07",
+  "source_sha256": "b316bc44e29b0f7c8be4bf8d0d7c91d1cc7dac753481b81c75397af2ba30ff34",
+  "source_status": "official-reference-2022",
+  "target_services": [
+    "120",
+    "122",
+    "125"
+  ],
+  "transformation": "Extract LineString Placemarks whose names contain 120, 122 or 125; preserve WGS84 lon/lat coordinates."
+}
